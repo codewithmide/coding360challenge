@@ -4,12 +4,13 @@ module.exports = {
   theme: {
     colors: {
       'mint': '#ADEFD1FF',
-      'sailorBlue': '#00203F',
-      'black': '#000000',
+      'dark-grey': '#333333',
+      'black': '#292929',
       'white': '#ffffff',
     },
     fontWeight: {
-      'light': 100,
+      'thin': 100,
+      'light': 400,
       'normal': 500,
       'bold': 600,
       'bolder': 700
