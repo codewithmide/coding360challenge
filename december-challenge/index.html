@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500&f[]=clash-display@200,700,500,600,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ARTSY | December coding360challenge</title>
+</head>
+<body>
+
+    <main class="w-screen flex flex-col items-center justify-center">
+        <!--MOBILE HEADER -->
+        <header class="md:hidden flex w-[95%] justify-between my-5">
+
+            <!-- MOBILE MENU BUTTON -->
+            <section class="flex items-center w-[10%]">
+                <img src="./images/menu.png" alt="menu button">
+            </section>
+
+            <!-- MOBILE LOGO -->
+            <section class="flex items-baseline justify-center w-[75%]">
+                <h2 class="font-bold font-STIX text-normal">
+                    ARTSY.
+                </h2>
+            </section>
+
+            <!-- MOBILE ICONS -->
+            <section class="flex w-[15%]">
+                <img src="./images/search.png" alt="search" class="object-contain">
+                <img src="./images/cart.png" alt="cart" class="object-contain">
+            </section>
+        </header>
+
+
+        <!--DESKTOP HEADER -->
+        <header class="sm:hidden md:flex w-[80%] justify-between my-10">
+            <!-- LOGO -->
+            <section>
+                <h1 class="font-bold font-STIX text-semiBig cursor-pointer">ARTSY.</h1>
+            </section>
+
+            <!-- DESKTOP NAV BAR -->
+            <nav class="font-Satoshi items-center flex justify-center">
+                <ul class="flex gap-6 text-black font-normal text-normal">
+                    <li class="underline cursor-pointer">Home</li>
+                    <li class="cursor-pointer hover:underline">Marketplace</li>
+                    <li class="cursor-pointer hover:underline">Auctions</li>
+                    <li class="cursor-pointer hover:underline">Drop</li>
+                </ul>
+            </nav>
+
+            <!-- DESKTOP ICONS -->
+            <section class="flex items-center gap-3">
+                <div>
+                    <img src="./images/Search-desktop.png" alt="search" class="object-contain cursor-pointer">
+                </div>
+
+                <div>
+                    <img src="./images/cart-desktop.png" alt="cart" class="object-contain cursor-pointer">
+                </div>
+
+                <div>
+                    <img src="./images/notification.png" alt="notification" class="object-contain cursor-pointer">
+                </div>
+
+            </section>
+        </header>
+
+        <!-- HERO SECTION -->
+        <div class="md:w-[70%] sm:w-[85%]">
+            <h1 class="w-full font-Clash font-bold text-big sm:hidden md:flex text-center my-6">
+                Photography is poetry & beautiful untold stories
+            </h1>
+
+            <h1 class="w-full font-Clash font-normal md:hidden sm:text-normal text-center">
+                Photography is poetry and beautiful untold stories
+            </h1>
+
+            <h2 class="w-full font-Satoshi font-normal md:text-medium sm:text-small text-center my-10">
+                Flip through more than 10,000 vintage shots, old photograghs, historic images and captures seamlessly in one place. Register to get top access.
+            </h2>
+        </div>
+
+    </main>
+
+</body>
+</html>
