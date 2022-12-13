@@ -5,9 +5,11 @@ module.exports = {
     colors: {
       'grey': '#616161',
       'light-grey': '#AEAEAE',
+      'lighter-grey': '#E2E2E2',
       'dark-grey': '#333333',
       'black': '#292929',
       'white': '#ffffff',
+      'creators-color': 'rgba(0, 0, 0, 0.57)',
     },
     fontWeight: {
       'thin': 100,
@@ -39,8 +41,11 @@ module.exports = {
         'semi-medium': '1.7rem',
         'medium': '2rem',
         'semiBig': '2.5rem',
+        'circa': '3rem',
+        'biggie': '3.5rem',
         'bigger': '4.25rem',
-        'big': '5rem'
+        'big': '5rem',
+        'heavy': '10.625rem'
       }
     },
   },
