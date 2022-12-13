@@ -30,10 +30,12 @@ module.exports = {
         Poppins: ['Poppins', 'sans-serif']
       },
       fontSize: {
+        'smalli': '0.6rem',
         'smallest': '0.8rem',
         'small': '1rem',
         'semi-normal': '1.2rem',
         'normal': '1.4rem',
+        'normali': '1.5rem',
         'semi-medium': '1.7rem',
         'medium': '2rem',
         'semiBig': '2.5rem',
