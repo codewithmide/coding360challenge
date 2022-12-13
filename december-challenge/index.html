@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500&f[]=clash-display@200,700,500,600,300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FONTSHARE API -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&f[]=clash-display@200,400,700,500,600,300&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE FONT API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Bellefair&family=Poppins&family=STIX+Two+Text:wght@700&display=swap" rel="stylesheet">
+
     <title>ARTSY | December coding360challenge</title>
 </head>
 <body>
 
     <main class="w-screen flex flex-col items-center justify-center">
-        <!--MOBILE HEADER -->
+        <!-- MOBILE HEADER STARTS -->
         <header class="md:hidden flex w-[95%] justify-between my-5">
 
             <!-- MOBILE MENU BUTTON -->
@@ -34,9 +37,10 @@
                 <img src="./images/cart.png" alt="cart" class="object-contain">
             </section>
         </header>
+        <!-- MOBILE HEADER ENDS -->
 
 
-        <!--DESKTOP HEADER -->
+        <!-- DESKTOP HEADER STARTS -->
         <header class="sm:hidden md:flex w-[80%] justify-between my-10">
             <!-- LOGO -->
             <section>
@@ -69,8 +73,9 @@
 
             </section>
         </header>
+        <!-- DESKTOP HEADER ENDS -->
 
-        <!-- HERO SECTION -->
+        <!-- HERO SECTION STARTS -->
         <div class="md:w-[70%] sm:w-[85%] flex flex-col items-center">
             <!-- DESKTOP HEADING -->
             <h1 class="w-full font-Clash font-bold text-big sm:hidden md:flex text-center my-6">
@@ -93,10 +98,11 @@
 
         <div class="md:hidden sm:h-[356px] w-[95%] mt-3">
         </div>
+        <!-- HERO SECTION ENDS -->
 
     </main>
 
-    <!-- FEATURED PRODUCTS DESKTOP -->
+    <!-- FEATURED PRODUCTS DESKTOP STARTS -->
     <div class="md:flex flex-col sm:hidden w-screen items-center">
         <div class="w-[80%] flex flex-col">
             <section class="mb-6">
@@ -215,8 +221,10 @@
 
         </div>
     </div>
+    <!-- FEATURED PRODUCTS DESKTOP ENDS -->
 
-    <!-- FEATURED PRODUCTS MOBILE -->
+
+    <!-- FEATURED PRODUCTS MOBILE STARTS -->
     <div class="md:hidden flex-col sm:flex w-screen items-center">
         <div class="w-[95%] flex flex-col">
             <section class="mb-6">
@@ -335,7 +343,100 @@
 
         </div>
     </div>
+    <!-- FEATURED PRODUCTS MOBILE ENDS -->
 
 
+    <!-- MONALISA STARTS -->
+    <div class="w-full sm:h-[336px] md:h-[780px] flex flex-col items-center my-[10rem]" style="background: linear-gradient(99.99deg, #4693ED -26.21%, #79C2D2 22.16%, rgba(192, 86, 9, 0.49) 111.62%);
+    ;">
+        <!-- MONALISA DESKTOP HEADING STARTS -->
+        <section class="w-[1200px] mt-8 sm:hidden md:flex flex-col">
+            <h2 class="text-white text-left md:text-semiBig font-Satoshi">
+                See Upcoming Auctions and Exibitions
+            </h2>
+            <hr class="border-none h-[0.8px] bg-white mb-6 w-[667px] ml-3">
+        </section>
+        <!-- MONALISA DESKTOP HEADING ENDS -->
+
+
+        <!-- MONALISA MAIN PAGE DESKTOP STARTS -->
+        <section class="md:w-[1200px] h-[546px] md:flex sm:hidden items-end justify-center" style="background: url(./images/monalisa-desktop.png);">
+            <div class="w-[95%] h-[194.95px] mb-[3.3rem] m-0 p-0 flex items-end justify-between">
+
+                <div class="w-[705px] h-full leading-none flex justify-between">
+                    <div class=" h-full flex items-center">
+                        <h1 class="text-bigger font-Bellefair text-white">
+                            01
+                        </h1>
+                    </div>
+
+                    <div class="w-[16px] h-[16px] ml-[-1.7rem] mt-1" style="background-image: url(./images/Ellipse.png); background-position: left top; background-repeat:no-repeat; background-size: auto;"></div>
+
+                    <div class="w-[628.85px] h-full">
+                        <div class="w-[353.88px] h-[68px]">
+                            <h2 class="font-Bellefair text-medium text-white">
+                                MONALISA REDEFINED IN STYLE
+                            </h2>
+                        </div>
+
+                        <div class="w-[208px] h-[20px] my-3">
+                            <p class="text-white font-Poppins font-light text-smallest uppercase">
+                                Start on : 08:00 GTS . Monday 
+                            </p>
+                        </div>
+
+                        <div class="w-full h-[81.14px]">
+                            <p class="text-white font-Satoshi font-normal text-small leading-[21px] tracking-[0.065rem]">
+                                GET EXCLUSIVE VIEWING OF CONTEMPORARY ART AND CONNECT WITH INVESTORS AND AUCTIONEERS ACROSS THE WORLD BRINGING THEIR HIGHEST AND LOWEST BIDS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[320px] h-[62px] mb-3 flex items-center justify-between">
+                    <div class="w-[100px] h-[32px]">
+                        <p class="text-white font-Satoshi text-normal font-light underline leading-[32px]">
+                            See more
+                        </p>
+                    </div>
+
+                    <div class="w-[181px] h-full">
+                        <button class="w-full h-full text-white font-Satoshi text-normal font-light border border-white rounded-[10px] leading-[32px]">
+                            Set a reminder
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- MONALISA MAIN PAGE DESKTOP ENDS -->
+
+        <!-- MONALISA FOOTER STARTS -->
+        <div class="md:w-[1200px] h-[69.71px] my-auto sm:hidden md:flex items-center justify-between">
+            <div class="w-[295.69px] h-[10px] bg-light-grey rounded-[50px]">
+                <div class="w-[47.52px] h-full bg-white rounded-[50px]"></div>
+            </div>
+
+            <!-- MONALISA NAVIGATION BUTTONS -->
+            <div class="w-[158.86px] h-full flex items-center justify-between">
+                <div class="w-[69.71px] h-full rounded-full flex items-center justify-center cursor-pointer" style="background: rgba(255, 255, 255, 0.2); box-shadow: 7.77035px 7.77035px 11.6555px rgba(0, 0, 0, 0.15); backdrop-filter: blur(7.77035px);">
+                    <img src="./images/little-left-arrow.png" alt="little-left-arrow">
+                </div>
+
+                <div class="w-[69.71px] h-full rounded-full flex items-center justify-center cursor-pointer" style="background: rgba(255, 255, 255, 0.2); box-shadow: 7.77035px 7.77035px 11.6555px rgba(0, 0, 0, 0.15); backdrop-filter: blur(7.77035px);">
+                    <img src="./images/little-right-arrow.png" alt="little-left-arrow">
+                </div>
+            </div>
+            <!-- MONALISA NAVIGATION BUTTONS ENDS -->
+        </div>
+        <!-- MONALISA FOOTER ENDS -->
+
+        <!-- MONALISA MAIN PAGE MOBILE STARTS -->
+        <section class="md:hidden sm:w-[347px] sm:h-[269px]" style="background: ;">
+            <!-- MONALISA MAIN PAGE MOBILE ENDS -->
+
+        </section>
+    </div>
+    <!-- MONALISA ENDS -->
 </body>
 </html>

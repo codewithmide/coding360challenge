@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     colors: {
       'grey': '#616161',
+      'light-grey': '#AEAEAE',
       'dark-grey': '#333333',
       'black': '#292929',
       'white': '#ffffff',
@@ -24,6 +25,9 @@ module.exports = {
         Clash: ['Clash Display', 'sans-serif'],
         Satoshi: ['Satoshi', 'sans-serif'],
         STIX: ['STIX Two Text', 'sans-serif'],
+        Baskervville: ['Baskervville', 'serif'],
+        Bellefair: ['Bellefair', 'serif'],
+        Poppins: ['Poppins', 'sans-serif']
       },
       fontSize: {
         'smallest': '0.8rem',
@@ -33,6 +37,7 @@ module.exports = {
         'semi-medium': '1.7rem',
         'medium': '2rem',
         'semiBig': '2.5rem',
+        'bigger': '4.25rem',
         'big': '5rem'
       }
     },
