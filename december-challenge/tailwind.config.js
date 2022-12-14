@@ -29,7 +29,8 @@ module.exports = {
         STIX: ['STIX Two Text', 'sans-serif'],
         Baskervville: ['Baskervville', 'serif'],
         Bellefair: ['Bellefair', 'serif'],
-        Poppins: ['Poppins', 'sans-serif']
+        Poppins: ['Poppins', 'sans-serif'],
+        Rubik: ['Rubik', 'sans-serif'],
       },
       fontSize: {
         'smalli': '0.6rem',
