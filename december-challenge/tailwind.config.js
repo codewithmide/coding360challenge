@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html"],
+  content: ["./index.html",
+  "./public/pages/marketplace.html"],
   theme: {
     colors: {
       'grey': '#616161',
@@ -11,6 +12,7 @@ module.exports = {
       'white': '#ffffff',
       'creators-color': 'rgba(0, 0, 0, 0.57)',
       'blue': 'rgba(51, 65, 193, 1)',
+      'light-green': 'rgba(175, 176, 145, 1)',
     },
     fontWeight: {
       'thin': 100,

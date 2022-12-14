@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/styles.css">
+    <!-- FONTSHARE API -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&f[]=clash-display@200,400,700,500,600,300&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE FONT API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Bellefair&family=Poppins&family=Rubik:wght@500&family=STIX+Two+Text:wght@700&display=swap" rel="stylesheet">
+
+    <title>ARTSY | Marketplace</title>
+</head>
+<body>
+
+    <main class="w-screen flex flex-col items-center justify-center">
+        <!-- MOBILE HEADER STARTS -->
+        <header class="md:hidden flex w-[95%] justify-between my-5">
+
+            <!-- MOBILE MENU BUTTON -->
+            <section class="flex items-center w-[10%] menu">
+                <img src="/images/menu.png" alt="menu button">
+            </section>
+
+            <!-- MOBILE LOGO -->
+            <section class="flex items-baseline justify-center w-[75%]">
+                <h2 class="font-bold font-STIX text-normal">
+                    ARTSY.
+                </h2>
+            </section>
+
+            <!-- MOBILE ICONS -->
+            <section class="flex w-[15%]">
+                <img src="/images/search.png" alt="search" class="object-contain">
+                <img src="/images/cart.png" alt="cart" class="object-contain">
+            </section>
+        </header>
+        <!-- MOBILE HEADER ENDS -->
+
+        <!-- DESKTOP HEADER STARTS -->
+        <header class="sm:hidden md:flex w-[80%] justify-between my-10">
+            <!-- LOGO -->
+            <section>
+                <h1 class="font-bold font-STIX text-semiBig cursor-pointer">ARTSY.</h1>
+            </section>
+
+            <!-- DESKTOP NAV BAR -->
+            <nav class="font-Satoshi items-center flex justify-center w-[485px]">
+                <ul class="flex gap-[47px] text-black font-normal text-normal">
+                    <li class="cursor-pointer">
+                        <a href="/index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cursor-pointer underline"><a href="/public/pages/marketplace.html">
+                        Marketplace
+                    </a></li>
+                    <li class="cursor-pointer">Auctions</li>
+                    <li class="cursor-pointer">Drop</li>
+                </ul>
+            </nav>
+
+            <!-- DESKTOP ICONS -->
+            <section class="flex items-center gap-3">
+                <div>
+                    <img src="/images/Search-desktop.png" alt="search" class="object-contain cursor-pointer">
+                </div>
+
+                <div>
+                    <img src="/images/cart-desktop.png" alt="cart" class="object-contain cursor-pointer">
+                </div>
+
+                <div>
+                    <img src="/images/notification.png" alt="notification" class="object-contain cursor-pointer">
+                </div>
+
+            </section>
+        </header>
+        <!-- DESKTOP HEADER ENDS -->
+
+        <!-- MOBILE MENU STARTS -->
+        <div class="w-full h-full absolute top-0 z-10 md:hidden sm:hidden flex justify-center mobile-nav-links bg-white">
+
+            <div class="w-[90%] h-[90%] flex flex-col items-start mt-6">
+
+                <div class="w-full flex items-center justify-between">
+                    <h2 class="font-bold font-STIX text-normal my-auto">
+                        ARTSY.
+                    </h2>
+                    <div class="close w-[20px]">
+                        <img src="/images/close-mobile.png" alt="close-mobile">
+                    </div>
+                </div>
+
+                <div class="mt-16">
+                    <ul class="flex flex-col items-start gap-4 w-full h-full font-Satoshi text-semi-normal">
+                        <li class="cursor-pointer">
+                            <a href="/index.html">
+                                Home
+                            </a></li>
+                        <li class="cursor-pointer underline">
+                            <a href="/public/pages/marketplace.html">
+                                Marketplace
+                            </a></li>
+                        <li class="cursor-pointer">
+                            <a href="/public/pages/auction.html">
+                                Auctions
+                            </a></li>
+                        <li class="cursor-pointer">
+                            <a href="/public/pages/dropweb.html">
+                                Drops
+                            </a></li>
+                    </ul>
+                </div>
+
+                <div class="w-full h-full flex items-end justify-end">
+                    <div class="h-[64px] w-[64px] bg-blue rounded-full flex items-center justify-center">
+                        <img src="/images/chat-logo.png" alt="chat-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MOBILE MENU ENDS -->
+
+    </main>
+
+    <!-- SEARCH SECTION FOR DESKTOP STARTS -->
+    <div class="grid place-items-center w-full my-20">
+        <div class="w-[80%] h-[91px] flex items-center justify-between">
+            <div class="w-[23%] h-[61px] bg-lighter-grey flex items-end justify-end pl-3 border-l-[1rem] border-l-lighter-grey rounded-[15px]" style="background-image: url(/images/market-search.png); background-position: left center; background-repeat: no-repeat;">
+                <input type="text" placeholder="Search" class="w-[85%] h-full bg-lighter-grey text-black font-Satoshi text-semi-normal active:outline-none focus:outline-none outline-none border-none focus:border-none active:border-none rounded-[15px]">
+            </div>
+
+            <div class="w-[72%] h-full rounded-[15px] flex items-center justify-between px-4" style="box-shadow: 4px 4px 64px 0px rgba(0, 0, 0, 0.1);
+            ">
+                <p class="text-semi-normal font-Satoshi">
+                    See 1-6 of 15 results
+                </p>
+                <div class="border-black border rounded-[8px] w-[15%] h-[58px] gap-[5px] flex items-center justify-center">
+                    <p class="text-small font-Satoshi text-black">
+                        Sort by
+                    </p>
+                    <img src="/images/dropdown-icon.png" alt="dropdown-icon">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SEARCH SECTION FOR DESKTOP ENDS -->
+
+
+    <!-- SEARCHABLE CONTENTS FOR DESKTOP STARTS -->
+    <div class="grid place-items-center w-full my-20">
+        <div class="w-[80%] h-full flex items-center justify-between">
+            <div class="w-[20%] h-full flex flex-col">
+                <div class="w-full flex items-center gap-3">
+                    <img src="/images/filter.png" alt="filter" class="w-[30px] h-[30px]">
+                    <h1 class="font-Satoshi text-normal leading-[50.43px]">Filter</h1>
+                </div>
+
+                <hr class="h-[6px] w-full border-none bg-light-green rounded-[10px]">
+
+                <div class="w-full flex flex-col justify-between mt-20">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="font-Satoshi text-semi-normal font-normal leading-[44.13px]">
+                            By category
+                        </p>
+                        <img src="/images/arrow-up.png" alt="arrow-up">
+                    </div>
+
+                    <div class="flex flex-col items-start gap-3 mt-8">
+                        <section class="gap-0 flex mb-2">
+                            <label class="container">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <p class="text-small font-Satoshi font-light">Editorial</p>
+                        </section>
+
+                        <section class="gap-0 flex mb-2">
+                            <label class="container">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <p class="text-small font-Satoshi font-light">Fashion</p>
+                        </section>
+
+                        <section class="gap-0 flex mb-2">
+                            <label class="container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <p class="text-small font-Satoshi font-light">Optics</p>
+                        </section>
+
+                        <section class="gap-0 flex mb-2">
+                            <label class="container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <p class="text-small font-Satoshi flex font-light">
+                                Art<span class="space"></span>&<span class="spaces"></span>Museum
+                            </p>
+                        </section>
+
+                        <section class="gap-0 flex">
+                            <label class="container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <p class="text-small font-Satoshi font-light">Nature</p>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="w-full flex flex-col justify-between mt-20">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="font-Satoshi text-semi-normal font-normal leading-[44.13px]">
+                            By price
+                        </p>
+                        <img src="/images/arrow-up.png" alt="arrow-up">
+                    </div>
+                    <p class="font-Satoshi text-small font-light leading-[32.4px] my-6">
+                        $100.00 - $150.00
+                    </p>
+
+                    <div class="w-full h-[32px] flex items-center justify-end" style="background: url(/images/big-black-dot.png), url(/images/white-dot.png); background-repeat: no-repeat; background-position: center center, left center;">
+                        <div class="w-[86%] h-[6px] bg-light-grey rounded-[10px]">
+                            <div class="bg-black w-[50%] h-full rounded-[10px]"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full flex flex-col justify-between mt-20">
+                    <div class="w-full flex items-center justify-between mb-8">
+                        <p class="font-Satoshi text-semi-normal font-normal leading-[44.13px]">
+                            By artist
+                        </p>
+                        <img src="/images/arrow-up.png" alt="arrow-up">
+                    </div>
+
+                    <p class="font-Satoshi text-small font-light leading-[32.4px] underline my-2">
+                        All
+                    </p>
+                    <p class=" font-Satoshi text-small font-light leading-[32.4px] my-2">
+                        Below $100.00
+                    </p>
+                    <p class="font-Satoshi text-small font-light leading-[32.4px] my-2">
+                        $100.00 - $150.00
+                    </p>
+                    <p class="font-Satoshi text-small font-light leading-[32.4px] my-2">
+                        $150.00 - $200.00
+                    </p>
+                    <p class="font-Satoshi text-small font-light leading-[32.4px] my-2">
+                        Above $200.00
+                    </p>
+                </div>
+
+                <div class="w-full flex flex-col justify-between mt-20">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="font-Satoshi text-semi-normal font-normal leading-[44.13px]">
+                            Collection year
+                        </p>
+                        <img src="/images/down-arrow.png" alt="arrow-down">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w-[72%] h-full flex flex-wrap items-center justify-between gap-10">
+
+                <div class="w-[30%] h-[360px] p-3" style="box-shadow: 0px 34px 68px 0px rgba(217, 225, 244, 0.36);
+                ">
+                    <img src="/images/philo.png" alt="philo">
+                    <div class="w-[95%] h-[70px] flex flex-col items-start justify-between mt-3">
+                        <h2 class="font-Satoshi text-small font-light text-dark-grey">
+                            PHILOMENA ‘22
+                        </h2>
+                        <p class="font-Satoshi text-semi-normal font-bold text-black">
+                            $3.90
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-[30%] h-[360px] p-3" style="box-shadow: 0px 34px 68px 0px rgba(217, 225, 244, 0.36);
+                ">
+                    <img src="/images/boolean-egyptian.png" alt="philo">
+                    <div class="w-[95%] h-[70px] flex flex-col items-start justify-between mt-3">
+                        <h2 class="font-Satoshi text-small font-light text-dark-grey">
+                            BOOLEAN EGYPTIAN
+                        </h2>
+                        <p class="font-Satoshi text-semi-normal font-bold text-black">
+                            $3.90
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-[30%] h-[360px] p-3" style="box-shadow: 0px 34px 68px 0px rgba(217, 225, 244, 0.36);
+                ">
+                    <img src="/images/blanc.png" alt="philo">
+                    <div class="w-[95%] h-[70px] flex flex-col items-start justify-between mt-3">
+                        <h2 class="font-Satoshi text-small font-light text-dark-grey">
+                            BLANC
+                        </h2>
+                        <p class="font-Satoshi text-semi-normal font-bold text-black">
+                            $3.90
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-[30%] h-[360px] p-3" style="box-shadow: 0px 34px 68px 0px rgba(217, 225, 244, 0.36);
+                ">
+                    <img src="/images/ellipsia.png" alt="philo">
+                    <div class="w-[95%] h-[70px] flex flex-col items-start justify-between mt-3">
+                        <h2 class="font-Satoshi text-small font-light text-dark-grey">
+                            ELLIPSIA
+                        </h2>
+                        <p class="font-Satoshi text-semi-normal font-bold text-black">
+                            $3.90
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-[30%] h-[360px] p-3" style="box-shadow: 0px 34px 68px 0px rgba(217, 225, 244, 0.36);
+                ">
+                    <img src="/images/lawmaker.png" alt="philo">
+                    <div class="w-[95%] h-[70px] flex flex-col items-start justify-between mt-3">
+                        <h2 class="font-Satoshi text-small font-light text-dark-grey">
+                            THE LAWMAKER
+                        </h2>
+                        <p class="font-Satoshi text-semi-normal font-bold text-black">
+                            $3.90
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-[30%] h-[360px] p-3" style="box-shadow: 0px 34px 68px 0px rgba(217, 225, 244, 0.36);
+                ">
+                    <img src="/images/veil.png" alt="philo">
+                    <div class="w-[95%] h-[70px] flex flex-col items-start justify-between mt-3">
+                        <h2 class="font-Satoshi text-small font-light text-dark-grey">
+                            VEIL
+                        </h2>
+                        <p class="font-Satoshi text-semi-normal font-bold text-black">
+                            $3.90
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-[30%] h-[360px] p-3" style="box-shadow: 0px 34px 68px 0px rgba(217, 225, 244, 0.36);
+                ">
+                    <img src="/images/alter.png" alt="philo">
+                    <div class="w-[95%] h-[70px] flex flex-col items-start justify-between mt-3">
+                        <h2 class="font-Satoshi text-small font-light text-dark-grey">
+                            ALTERNATING
+                        </h2>
+                        <p class="font-Satoshi text-semi-normal font-bold text-black">
+                            $3.90
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-[30%] h-[360px] p-3" style="box-shadow: 0px 34px 68px 0px rgba(217, 225, 244, 0.36);
+                ">
+                    <img src="/images/rosemary.png" alt="philo">
+                    <div class="w-[95%] h-[70px] flex flex-col items-start justify-between mt-3">
+                        <h2 class="font-Satoshi text-small font-light text-dark-grey">
+                            ROSEMARY
+                        </h2>
+                        <p class="font-Satoshi text-semi-normal font-bold text-black">
+                            $3.90
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-[30%] h-[360px] p-3" style="box-shadow: 0px 34px 68px 0px rgba(217, 225, 244, 0.36);
+                ">
+                    <img src="/images/beverly.png" alt="philo">
+                    <div class="w-[95%] h-[70px] flex flex-col items-start justify-between mt-3">
+                        <h2 class="font-Satoshi text-small font-light text-dark-grey">
+                            BEVERLY
+                        </h2>
+                        <p class="font-Satoshi text-semi-normal font-bold text-black">
+                            $3.90
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- SEARCH CONTENTS FOR DESKTOP ENDS -->
+
+
+    <!-- SEE MORE BUTTON -->
+    <div class="w-full h-[60px] grid place-items-center mt-[8rem] mb-[12rem]">
+        <button class="w-[200px] h-full grid place-items-center cursor-pointer border-black border rounded-[10px] font-Satoshi text-normal leading-[41px]">See more</button>
+    </div>
+
+    <script src="/public/scripts/mobile.js"></script>
+    <script src="/public/scripts/script.js"></script>
+</body>
+</html>
