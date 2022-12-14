@@ -1,0 +1,5 @@
+.mobile-hero {
+    background: url(/images/blue-mobile.png), url(/images/red-mobile.png), url(./images/orange-mobile.png);
+    background-position: right top, bottom right, left bottom;
+    background-repeat: no-repeat;
+}
