@@ -17,11 +17,12 @@
 <body>
 
     <main class="w-screen flex flex-col items-center justify-center">
+
         <!-- MOBILE HEADER STARTS -->
         <header class="md:hidden flex w-[95%] justify-between my-5">
 
             <!-- MOBILE MENU BUTTON -->
-            <section class="flex items-center w-[10%]">
+            <section class="flex items-center w-[10%] menu">
                 <img src="./images/menu.png" alt="menu button">
             </section>
 
@@ -114,9 +115,43 @@
             
         </div>
         <!-- MOBILE IMAGE SECTION ENDS -->
+
+        <!-- MOBILE MENU STARTS -->
+        <div class="w-full h-full absolute top-0 z-10 md:hidden sm:hidden flex justify-center mobile-nav-links bg-white">
+
+            <div class="w-[90%] h-[90%] flex flex-col items-start mt-6">
+
+                <div class="w-full flex items-center justify-between">
+                    <h2 class="font-bold font-STIX text-normal my-auto">
+                        ARTSY.
+                    </h2>
+                    <div class="close w-[20px]">
+                        <img src="./images/close-mobile.png" alt="close-mobile">
+                    </div>
+                </div>
+
+                <div class="mt-16">
+                    <ul class="flex flex-col items-start gap-4 w-full h-full font-Satoshi text-semi-normal">
+                        <li class="cursor-pointer hover:underline">Home</li>
+                        <li class="cursor-pointer hover:underline">Marketplace</li>
+                        <li class="cursor-pointer hover:underline">Auctions</li>
+                        <li class="cursor-pointer hover:underline">Drops</li>
+                    </ul>
+                </div>
+
+                <div class="w-full h-full flex items-end justify-end">
+                    <div class="h-[64px] w-[64px] bg-blue rounded-full flex items-center justify-center">
+                        <img src="./images/chat-logo.png" alt="chat-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MOBILE MENU ENDS -->
+
         <!-- HERO SECTION ENDS -->
 
     </main>
+
 
     <!-- FEATURED PRODUCTS DESKTOP STARTS -->
     <div class="md:flex flex-col sm:hidden w-screen items-center">
@@ -706,5 +741,7 @@
         </p>
 
     </footer>
+
+    <script src="/public/scripts/mobile.js"></script>
 </body>
 </html>

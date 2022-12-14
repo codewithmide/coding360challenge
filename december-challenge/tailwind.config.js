@@ -10,6 +10,7 @@ module.exports = {
       'black': '#292929',
       'white': '#ffffff',
       'creators-color': 'rgba(0, 0, 0, 0.57)',
+      'blue': 'rgba(51, 65, 193, 1)',
     },
     fontWeight: {
       'thin': 100,
