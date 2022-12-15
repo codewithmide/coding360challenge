@@ -1002,6 +1002,10 @@ video {
   height: 380px;
 }
 
+.h-\[0px\] {
+  height: 0px;
+}
+
 .w-screen {
   width: 100vw;
 }
