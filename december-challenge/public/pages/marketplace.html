@@ -127,8 +127,9 @@
 
     </main>
 
+
     <!-- SEARCH SECTION FOR DESKTOP STARTS -->
-    <div class="grid place-items-center w-full my-20">
+    <div class="md:grid place-items-center w-full my-20 sm:hidden">
         <div class="w-[80%] h-[91px] flex items-center justify-between">
             <div class="w-[23%] h-[61px] bg-lighter-grey flex items-end justify-end pl-3 border-l-[1rem] border-l-lighter-grey rounded-[15px]" style="background-image: url(/images/market-search.png); background-position: left center; background-repeat: no-repeat;">
                 <input type="text" placeholder="Search" class="w-[85%] h-full bg-lighter-grey text-black font-Satoshi text-semi-normal active:outline-none focus:outline-none outline-none border-none focus:border-none active:border-none rounded-[15px]">
@@ -151,8 +152,81 @@
     <!-- SEARCH SECTION FOR DESKTOP ENDS -->
 
 
+    <!-- MOBILE SEARCH SECTION STARTS -->
+    <div class="flex items-center justify-center md:hidden h-[85px] w-full mt-10">
+        <div class="w-[95%] h-full flex flex-col items-start justify-between">
+            <div class="flex">
+                <p class="text-light-grey font-Poppins font-thin text-small">Home/Marketplace/</p><span class="text-black text-small">Editorials</span>
+            </div>
+            <p class="italic text-light-grey font-Poppins font-thin text-small">
+                showing 1-5 of 18 results
+            </p>
+        </div>
+    </div>
+
+    <div class="flex items-center justify-center md:hidden h-[50px] w-full mt-8 mb-6">
+        <div class="w-[95%] h-full flex items-center justify-between px-3 rounded-[15px]" style="box-shadow: 4px 4px 64px 0px rgba(0, 0, 0, 0.1);
+        ">
+            <div class="h-p[30px] flex items-center gap-3">
+                <p class="font-Satoshi text-small">Filters</p>
+                <img src="/images/mo.png" alt="arrow-down">
+            </div>
+
+            <div class="h-p[30px] flex items-center gap-3">
+                <p class="font-Satoshi text-small">Sort by</p>
+                <img src="/images/mo.png" alt="arrow-down">
+            </div>
+        </div>
+    </div>
+
+    <div class="flex w-full items-center justify-center">
+        <div class="flex flex-col items-center justify-center w-[90%]">
+            <div class="flex-col flex items-center justify-center">
+                <img src="/images/mobile-lady-egyptian.png" alt="mobile-lady-egyptian">
+                <div class="flex items-center justify-between w-full mt-2">
+                    <p class="text-smallest font-Satoshi">BOOLEAN EGYPTIAN</p>
+                    <p class="text-smallest font-Satoshi">$21.00</p>
+                </div>
+            </div>
+
+            <div class="flex-col flex items-center justify-center my-8">
+                <img src="/images/road-to-egypt.png" alt="road-to-egypt">
+                <div class="flex items-center justify-between w-full mt-2">
+                    <p class="text-smallest font-Satoshi">ROAD TO EGYPT</p>
+                    <p class="text-smallest font-Satoshi">$11.00</p>
+                </div>
+            </div>
+
+            <div class="flex-col flex items-center justify-center my-8">
+                <img src="/images/blanc-mobile.png" alt="blanc-mobile">
+                <div class="flex items-center justify-between w-full mt-2">
+                    <p class="text-smallest font-Satoshi">BLANC</p>
+                    <p class="text-smallest font-Satoshi">$11.00</p>
+                </div>
+            </div>
+
+            <div class="flex-col flex items-center justify-center my-8">
+                <img src="/images/elipsia-mobile.png" alt="elipsia-mobile">
+                <div class="flex items-center justify-between w-full mt-2">
+                    <p class="text-smallest font-Satoshi">ELLIPSIA</p>
+                    <p class="text-smallest font-Satoshi">$11.00</p>
+                </div>
+            </div>
+
+            <div class="flex-col flex items-center justify-center my-8">
+                <img src="/images/lawmaker-mobile.png" alt="lawmaker">
+                <div class="flex items-center justify-between w-full mt-2">
+                    <p class="text-smallest font-Satoshi">THE LAWMAKERS</p>
+                    <p class="text-smallest font-Satoshi">$30.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MOBILE SEARCH SECTION STARTS -->
+
+
     <!-- SEARCHABLE CONTENTS FOR DESKTOP STARTS -->
-    <div class="grid place-items-center w-full my-20">
+    <div class="md:grid place-items-center w-full my-20 sm:hidden">
         <div class="w-[80%] h-full flex items-center justify-between">
             <div class="w-[20%] h-full flex flex-col">
                 <div class="w-full flex items-center gap-3">
@@ -394,10 +468,56 @@
     <!-- SEARCH CONTENTS FOR DESKTOP ENDS -->
 
 
-    <!-- SEE MORE BUTTON -->
-    <div class="w-full h-[60px] grid place-items-center mt-[8rem] mb-[12rem]">
+    <!-- SEE MORE BUTTON FOR DESKTOP -->
+    <div class="w-full h-[60px] grid place-items-center mt-[8rem] mb-[12rem] sm:hidden md:flex">
         <button class="w-[200px] h-full grid place-items-center cursor-pointer border-black border rounded-[10px] font-Satoshi text-normal leading-[41px]">See more</button>
     </div>
+    <!-- SEE MORE BUTTON FOR DESKTOP ENDS -->
+
+    <!-- LOAD MORE BUTTON MOBILE -->
+    <div class="w-full h-[53px] flex items-end justify-end my-8">
+        <h1 class="my-auto mr-4 font-Satoshi font-light text-semi-normal text-grey">Load more</h1>
+        <div class="w-[53px] h-[53px] border border-dark-grey rounded-full grid place-items-center mr-6 md:hidden">
+            <img src="/images/explore-arrow.png" alt="arrow">
+        </div>
+    </div>
+    <!-- LOAD MORE BUTTON MOBILE ENDS -->
+
+    <footer class="w-screen flex flex-col items-center gap-8 my-10">
+        <div class="flex md:border border-black w-[95%] sm:items-start md:items-center justify-center flex-col gap-5">
+            <h2 class="font-Baskervville md:text-medium uppercase md:leading-[39.06px]">
+                Newsletter
+            </h2>
+            <p class="font-Satoshi text-smalli leading-[15.71px] sm:flex md:hidden">
+                SUBSCRIBE TO OUR DAILY UPDATES AND NEWSLETTERS
+            </p>
+
+            <div class="flex md:flex-row sm:flex-col md:items-center justify-between md:w-[50%] md:h-[60px] sm:w-full sm:h-[110px]">
+
+                <input type="email" placeholder="Enter your email" class="md:w-[446px] sm:w-[80%] sm:h-[40px] md:h-full border border-black uppercase md:pl-10 sm:pl-6 font-Baskervville sm:text-smalli md:text-semi-normal active:outline-none focus:outline-none outline-none focus:border-black active:border-black">
+
+                <button class="md:w-[181.63px] sm:w-[140px] sm:h-[53.64px] md:h-full bg-black text-white font-Baskervville font-light uppercase sm:text-smalli md:text-semi-normal">Subscribe</button>
+            </div>
+        </div>
+
+        <div class="sm:flex flex-col gap-3 md:hidden w-[95%]">
+            <p class="text-smalli leading-[17.46px] font-Satoshi">REACH US</p>
+            <div class="flex gap-3 items-center">
+                <img src="/images/mobile-email-icon.png" alt="mobile-email-icon">
+                <p class="font-Satoshi text-smalli leading-[15.71px]">
+                    artsystudios@gmail.com
+                </p>
+            </div>
+
+            <div class="flex gap-3 items-center">
+                <img src="/images/mobile-location-icon.png" alt="mobile-location-icon">
+                <p class="font-Satoshi text-smalli leading-[15.71px]">
+                    Lagos, Nigeria.
+                </p>
+            </div>
+        </div>
+
+    </footer>
 
     <script src="/public/scripts/mobile.js"></script>
     <script src="/public/scripts/script.js"></script>
