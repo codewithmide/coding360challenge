@@ -597,6 +597,10 @@ video {
   margin: 0px;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -627,14 +631,19 @@ video {
   margin-bottom: 5rem;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mt-3 {
@@ -733,6 +742,10 @@ video {
   margin-top: 5rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -749,20 +762,12 @@ video {
   margin-bottom: 12rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
-}
-
-.hidden {
-  display: none;
 }
 
 .h-\[250px\] {
@@ -953,6 +958,14 @@ video {
   height: 61px;
 }
 
+.h-\[85px\] {
+  height: 85px;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
 .h-\[30px\] {
   height: 30px;
 }
@@ -973,32 +986,64 @@ video {
   height: 60px;
 }
 
-.h-\[100p\] {
-  height: 100p;
+.h-\[1px\] {
+  height: 1px;
 }
 
-.h-\[100px\] {
-  height: 100px;
+.h-\[\] {
+  height: ;
 }
 
-.h-\[50px\] {
-  height: 50px;
+.h-\[509px\] {
+  height: 509px;
+}
+
+.h-\[8\%\] {
+  height: 8%;
+}
+
+.h-\[5\%\] {
+  height: 5%;
+}
+
+.h-\[490px\] {
+  height: 490px;
+}
+
+.h-\[85\%\] {
+  height: 85%;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-\[400px\] {
+  height: 400px;
 }
 
 .h-\[0px\] {
   height: 0px;
 }
 
-.h-\[75px\] {
-  height: 75px;
+.h-\[380px\] {
+  height: 380px;
 }
 
-.h-\[85px\] {
-  height: 85px;
+.h-\[5\] {
+  height: 5;
 }
 
-.h-\[\] {
-  height: ;
+.h-\[80\%\] {
+  height: 80%;
+}
+
+.h-\[50\%\] {
+  height: 50%;
+}
+
+.h-\[20\%\] {
+  height: 20%;
 }
 
 .w-screen {
@@ -1237,20 +1282,36 @@ video {
   width: 50%;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .w-\[\] {
   width: ;
 }
 
-.w-\[55px\] {
-  width: 55px;
+.w-\[65\%\] {
+  width: 65%;
 }
 
-.w-\[px\] {
-  width: px;
+.w-\[\%\] {
+  width: %;
 }
 
-.border-collapse {
-  border-collapse: collapse;
+.w-\[h-\\\[90\\\%\\\]\] {
+  width: h-\[90\%\];
+}
+
+.w-\[955\%\] {
+  width: 955%;
+}
+
+.w-\[50px\] {
+  width: 50px;
+}
+
+.w-\[8\] {
+  width: 8;
 }
 
 .cursor-pointer {
@@ -1283,6 +1344,10 @@ video {
 
 .items-baseline {
   align-items: baseline;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-end {
@@ -1361,8 +1426,8 @@ video {
   border-radius: 8px;
 }
 
-.rounded-\[\] {
-  border-radius: ;
+.rounded-\[4px\] {
+  border-radius: 4px;
 }
 
 .border {
@@ -1390,6 +1455,16 @@ video {
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(41 41 41 / var(--tw-border-opacity));
+}
+
+.border-light-grey {
+  --tw-border-opacity: 1;
+  border-color: rgb(174 174 174 / var(--tw-border-opacity));
+}
+
+.border-grey {
+  --tw-border-opacity: 1;
+  border-color: rgb(97 97 97 / var(--tw-border-opacity));
 }
 
 .border-l-lighter-grey {
@@ -1448,19 +1523,28 @@ video {
   padding: 0.75rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pl-3 {
@@ -1557,11 +1641,6 @@ video {
 
 .text-normali {
   font-size: 1.5rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -1676,6 +1755,22 @@ video {
   line-height: 41px;
 }
 
+.leading-\[3\] {
+  line-height: 3;
+}
+
+.leading-\[37\.82px\] {
+  line-height: 37.82px;
+}
+
+.leading-\[\] {
+  line-height: ;
+}
+
+.leading-\[23\.42px\] {
+  line-height: 23.42px;
+}
+
 .tracking-\[0\.065rem\] {
   letter-spacing: 0.065rem;
 }
@@ -1707,6 +1802,15 @@ video {
 .text-light-grey {
   --tw-text-opacity: 1;
   color: rgb(174 174 174 / var(--tw-text-opacity));
+}
+
+.text-blue {
+  color: rgba(51, 65, 193, 1);
+}
+
+.text-teal {
+  --tw-text-opacity: 1;
+  color: rgb(0 108 162 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1893,10 +1997,6 @@ video {
 
   .md\:grid {
     display: grid;
-  }
-
-  .md\:contents {
-    display: contents;
   }
 
   .md\:hidden {
