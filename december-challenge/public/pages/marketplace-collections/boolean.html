@@ -14,242 +14,549 @@
 
     <title>ARTSY | Boolean Egyptian</title>
 </head>
-<body class="font-Satoshi">
+<body class="font-Satoshi overflow-x-hidden">
 
-    <main class="w-screen flex flex-col items-center justify-center">
-        <!-- MOBILE HEADER STARTS -->
-        <header class="md:hidden flex w-[95%] justify-between my-5">
-
-            <!-- MOBILE MENU BUTTON -->
-            <section class="flex items-center w-[10%] menu">
-                <img src="/images/menu.png" alt="menu button">
-            </section>
-
-            <!-- MOBILE LOGO -->
-            <section class="flex items-baseline justify-center w-[75%]">
-                <h2 class="font-bold font-STIX text-normal">
-                    ARTSY.
-                </h2>
-            </section>
-
-            <!-- MOBILE ICONS -->
-            <section class="flex w-[15%]">
-                <img src="/images/search.png" alt="search" class="object-contain">
-                <img src="/images/cart.png" alt="cart" class="object-contain">
-            </section>
-        </header>
-        <!-- MOBILE HEADER ENDS -->
-
-        <!-- DESKTOP HEADER STARTS -->
-        <header class="sm:hidden md:flex w-[80%] justify-between my-10">
-            <!-- LOGO -->
-            <section>
-                <h1 class="font-bold font-STIX text-semiBig cursor-pointer">ARTSY.</h1>
-            </section>
-
-            <!-- DESKTOP NAV BAR -->
-            <nav class="font-Satoshi items-center flex justify-center w-[485px]">
-                <ul class="flex gap-[47px] text-black font-normal text-normal">
-                    <li class="cursor-pointer">
-                        <a href="/index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li class="cursor-pointer underline"><a href="/public/pages/marketplace.html">
-                        Marketplace
-                    </a></li>
-                    <li class="cursor-pointer">Auctions</li>
-                    <li class="cursor-pointer">Drop</li>
-                </ul>
-            </nav>
-
-            <!-- DESKTOP ICONS -->
-            <section class="flex items-center gap-3">
-                <div>
-                    <img src="/images/Search-desktop.png" alt="search" class="object-contain cursor-pointer">
-                </div>
-
-                <div>
-                    <img src="/images/cart-desktop.png" alt="cart" class="object-contain cursor-pointer">
-                </div>
-
-                <div>
-                    <img src="/images/notification.png" alt="notification" class="object-contain cursor-pointer">
-                </div>
-
-            </section>
-        </header>
-        <!-- DESKTOP HEADER ENDS -->
-
-        <!-- MOBILE MENU STARTS -->
-        <div class="w-full h-full absolute top-0 z-10 md:hidden sm:hidden flex justify-center mobile-nav-links bg-white">
-
-            <div class="w-[90%] h-[90%] flex flex-col items-start mt-6">
-
-                <div class="w-full flex items-center justify-between">
-                    <h2 class="font-bold font-STIX text-normal my-auto">
+    <div class="sm:contents md:hidden">
+        <main class="w-screen flex flex-col items-center justify-center">
+            <!-- MOBILE HEADER STARTS -->
+            <header class="md:hidden flex w-[95%] justify-between my-5">
+    
+                <!-- MOBILE MENU BUTTON -->
+                <section class="flex items-center w-[10%] menu">
+                    <img src="/images/menu.png" alt="menu button">
+                </section>
+    
+                <!-- MOBILE LOGO -->
+                <section class="flex items-baseline justify-center w-[75%]">
+                    <h2 class="font-bold font-STIX text-normal">
                         ARTSY.
                     </h2>
-                    <div class="close w-[20px]">
-                        <img src="/images/close-mobile.png" alt="close-mobile">
-                    </div>
-                </div>
-
-                <div class="mt-16">
-                    <ul class="flex flex-col items-start gap-4 w-full h-full font-Satoshi text-semi-normal">
+                </section>
+    
+                <!-- MOBILE ICONS -->
+                <section class="flex w-[15%]">
+                    <img src="/images/search.png" alt="search" class="object-contain">
+                    <img src="/images/cart.png" alt="cart" class="object-contain">
+                </section>
+            </header>
+            <!-- MOBILE HEADER ENDS -->
+    
+            <!-- DESKTOP HEADER STARTS -->
+            <header class="sm:hidden md:flex w-[80%] justify-between my-10">
+                <!-- LOGO -->
+                <section>
+                    <h1 class="font-bold font-STIX text-semiBig cursor-pointer">ARTSY.</h1>
+                </section>
+    
+                <!-- DESKTOP NAV BAR -->
+                <nav class="font-Satoshi items-center flex justify-center w-[485px]">
+                    <ul class="flex gap-[47px] text-black font-normal text-normal">
                         <li class="cursor-pointer">
                             <a href="/index.html">
                                 Home
-                            </a></li>
-                        <li class="cursor-pointer underline">
-                            <a href="/public/pages/marketplace.html">
-                                Marketplace
-                            </a></li>
-                        <li class="cursor-pointer">
-                            <a href="/public/pages/auction.html">
-                                Auctions
-                            </a></li>
-                        <li class="cursor-pointer">
-                            <a href="/public/pages/dropweb.html">
-                                Drops
-                            </a></li>
+                            </a>
+                        </li>
+                        <li class="cursor-pointer underline"><a href="/public/pages/marketplace.html">
+                            Marketplace
+                        </a></li>
+                        <li class="cursor-pointer">Auctions</li>
+                        <li class="cursor-pointer">Drop</li>
                     </ul>
-                </div>
-
-                <div class="w-full h-full flex items-end justify-end">
-                    <div class="h-[64px] w-[64px] bg-blue rounded-full flex items-center justify-center">
-                        <img src="/images/chat-logo.png" alt="chat-logo">
+                </nav>
+    
+                <!-- DESKTOP ICONS -->
+                <section class="flex items-center gap-3">
+                    <div>
+                        <img src="/images/Search-desktop.png" alt="search" class="object-contain cursor-pointer">
+                    </div>
+    
+                    <div>
+                        <img src="/images/cart-desktop.png" alt="cart" class="object-contain cursor-pointer">
+                    </div>
+    
+                    <div>
+                        <img src="/images/notification.png" alt="notification" class="object-contain cursor-pointer">
+                    </div>
+    
+                </section>
+            </header>
+            <!-- DESKTOP HEADER ENDS -->
+    
+            <!-- MOBILE MENU STARTS -->
+            <div class="w-full h-full absolute top-0 z-10 md:hidden sm:hidden flex justify-center mobile-nav-links bg-white">
+    
+                <div class="w-[90%] h-[90%] flex flex-col items-start mt-6">
+    
+                    <div class="w-full flex items-center justify-between">
+                        <h2 class="font-bold font-STIX text-normal my-auto">
+                            ARTSY.
+                        </h2>
+                        <div class="close w-[20px]">
+                            <img src="/images/close-mobile.png" alt="close-mobile">
+                        </div>
+                    </div>
+    
+                    <div class="mt-16">
+                        <ul class="flex flex-col items-start gap-4 w-full h-full font-Satoshi text-semi-normal">
+                            <li class="cursor-pointer">
+                                <a href="/index.html">
+                                    Home
+                                </a></li>
+                            <li class="cursor-pointer underline">
+                                <a href="/public/pages/marketplace.html">
+                                    Marketplace
+                                </a></li>
+                            <li class="cursor-pointer">
+                                <a href="/public/pages/auction.html">
+                                    Auctions
+                                </a></li>
+                            <li class="cursor-pointer">
+                                <a href="/public/pages/dropweb.html">
+                                    Drops
+                                </a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="w-full h-full flex items-end justify-end">
+                        <div class="h-[64px] w-[64px] bg-blue rounded-full flex items-center justify-center">
+                            <img src="/images/chat-logo.png" alt="chat-logo">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- MOBILE MENU ENDS -->
-
-    </main>
-
-    <!-- HEADING FOR BOOLEAN EGYPTIAN MOBILE -->
-    <div class="flex flex-col items-center justify-center md:hidden h-[30px] w-full mt-8">
-        <div class="w-[95%] h-full flex flex-col items-start justify-between">
-            <div class="flex">
-                <p class="text-light-grey font-Poppins font-thin text-smallest">Home/<a href="../marketplace.html">Marketplace</a>/<a href="../marketplace.html">Editorials</a>/</p><span class="text-black text-smallest">Boolean</span>
+            <!-- MOBILE MENU ENDS -->
+    
+        </main>
+    
+        <!-- HEADING FOR BOOLEAN EGYPTIAN MOBILE -->
+        <div class="flex flex-col items-center justify-center md:hidden h-[30px] w-full mt-8">
+            <div class="w-[95%] h-full flex flex-col items-start justify-between">
+                <div class="flex">
+                    <p class="text-light-grey font-Poppins font-thin text-smallest">Home/<a href="../marketplace.html">Marketplace</a>/<a href="../marketplace.html">Editorials</a>/</p><span class="text-black text-smallest">Boolean</span>
+                </div>
+                <hr class="w-full h-[1px] border-light-grey">
             </div>
-            <hr class="w-full h-[1px] border-light-grey">
+        </div>
+    
+        <!-- CONTENTS FOR BOOLEAN EGYPTIAN -->
+        <div class="flex w-full items-center justify-center md:hidden my-6">
+            <div class="flex flex-col items-center justify-center w-[90%]">
+    
+                <div class="flex-col flex items-center justify-center">
+                    <img src="/images/mobile-lady-egyptian.png" alt="mobile-lady-egyptian">
+                    <div class="flex items-center justify-between w-full mt-2">
+                        <p class="text-smallest font-Satoshi">BOOLEAN EGYPTIAN</p>
+                        <p class="text-smallest font-Satoshi">$21.00</p>
+                    </div>
+                </div>
+    
+                <div class="w-full my-4">
+                    <p class="text-smallest">
+                        Creator: <span class="text-teal text-smallest">Ali Dawa</span>
+                    </p>
+                    <p class="text-dark-grey my-4 text-smallest">
+                        Made in Italy
+                    </p>
+    
+                    <p class="text-dark-grey my-4 text-smallest">
+                        Total views : 1.7k
+                    </p>
+    
+                    <div class="flex items-start justify-start gap-3 w-[10%] my-3">
+                        <h1 class="text-normal">-</h1>
+                        <h1 class="text-normal">1</h1>
+                        <h1 class="text-normal">+</h1>
+                    </div>
+    
+                    <div class="flex items-start gap-5 h-[50px] mb-10 mt-6">
+                        <button class="w-[60%] h-full bg-blue rounded-[4px] text-white">
+                            Add to cart
+                        </button>
+                        <div class="flex items-center justify-center w-[20%] h-full border rounded-[4px]">
+                            <img src="/images/favorite.png" alt="favorite">
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <!-- EXPLORE SECTION STARTS -->
+                <hr class="border-none h-[0.5px] bg-dark-grey w-full my-6">
+                <div class="flex w-[90%] items-center justify-between">
+                    <h2 class="text-small text-dark-grey">
+                        Description
+                    </h2>
+                    
+                    <div class="">
+                        <img src="/images/down-arrow.png" alt="arrow">
+                    </div>
+                </div>
+    
+                <hr class="border-none h-[0.5px] bg-dark-grey my-6 w-full">
+    
+                <div class="flex w-[90%] items-center justify-between">
+                    <h2 class="text-small text-dark-grey">
+                        Listings
+                    </h2>
+                    
+                    <div class="">
+                        <img src="/images/down-arrow.png" alt="arrow">
+                    </div>
+                </div>
+    
+                <hr class="border-none h-[0.5px] bg-dark-grey w-full my-6">
+    
+                <div class="flex w-[90%] items-center justify-between">
+                    <h2 class="text-small text-dark-grey">
+                        Status
+                    </h2>
+                    
+                    <div class="">
+                        <img src="/images/down-arrow.png" alt="arrow">
+                    </div>
+                </div>
+    
+                <hr class="border-none h-[0.5px] bg-dark-grey w-full my-6">
+                <!-- EXPLORE SECTION ENDS -->
+                
+    
+                <div class="flex items-start flex-col justify-center w-full my-20 gap-6">
+                    <h1 class="text-semi-normal text-left leading-[37.82px]">
+                        More from this collection
+                    </h1>
+                    <div class="border w-full flex flex-col items-center h-[490px]">
+    
+                        <div class="w-[95%] h-[5%] flex items-end justify-end my-2">
+                            <img src="/images//favorite.png" alt="favorite" class="h-[90%]">
+                        </div>
+    
+                        <div class="h-[85%] w-[95%] grid place-items-center" style="background: url(/images/two-ladies.png); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                            <div class="h-[50px] w-full flex items-center justify-between">
+                                <div class="w-[50px] h-full border-grey rounded-full border grid place-items-center">
+                                    <img src="/images/dark-back-arrow.png" alt="dark-back-arrow" class="w-[20%]">
+                                </div>
+    
+                                <div class="w-[50px] h-full border-white rounded-full border grid place-items-center">
+                                    <img src="/images/light-forward-arrow.png" alt="dark-back-arrow" class="w-[20%]">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="w-[95%] h-[5%] flex items-center justify-between my-auto">
+                            <h3 class="leading-[23.42px]">Sassy</h3>
+                            <div class="flex items-center justify-center gap-2 h-full">
+                                <img src="/images/eth-icon.png" alt="eth-icon" class="h-[90%]">
+                                <h3>3.20</h3>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- CONTENTS FOR BOOLEAN EGYPTIAN -->
-    <div class="flex w-full items-center justify-center md:hidden my-6">
-        <div class="flex flex-col items-center justify-center w-[90%]">
-
-            <div class="flex-col flex items-center justify-center">
-                <img src="/images/mobile-lady-egyptian.png" alt="mobile-lady-egyptian">
-                <div class="flex items-center justify-between w-full mt-2">
-                    <p class="text-smallest font-Satoshi">BOOLEAN EGYPTIAN</p>
-                    <p class="text-smallest font-Satoshi">$21.00</p>
-                </div>
-            </div>
-
-            <div class="w-full my-4">
-                <p class="text-smallest">
-                    Creator: <span class="text-teal text-smallest">Ali Dawa</span>
-                </p>
-                <p class="text-dark-grey my-4 text-smallest">
-                    Made in Italy
-                </p>
-
-                <p class="text-dark-grey my-4 text-smallest">
-                    Total views : 1.7k
-                </p>
-
-                <div class="flex items-start justify-start gap-3 w-[10%] my-3">
-                    <h1 class="text-normal">-</h1>
-                    <h1 class="text-normal">1</h1>
-                    <h1 class="text-normal">+</h1>
-                </div>
-
-                <div class="flex items-start gap-5 h-[50px] mb-10 mt-6">
-                    <button class="w-[60%] h-full bg-blue rounded-[4px] text-white">
-                        Add to cart
-                    </button>
-                    <div class="flex items-center justify-center w-[20%] h-full border rounded-[4px]">
-                        <img src="/images/favorite.png" alt="favorite">
+    <div class="sm:hidden md:contents">
+        <main class="w-screen flex flex-col items-center justify-center">
+            <!-- MOBILE HEADER STARTS -->
+            <header class="md:hidden flex w-[95%] justify-between my-5">
+    
+                <!-- MOBILE MENU BUTTON -->
+                <section class="flex items-center w-[10%] menu">
+                    <img src="/images/menu.png" alt="menu button">
+                </section>
+    
+                <!-- MOBILE LOGO -->
+                <section class="flex items-baseline justify-center w-[75%]">
+                    <h2 class="font-bold font-STIX text-normal">
+                        ARTSY.
+                    </h2>
+                </section>
+    
+                <!-- MOBILE ICONS -->
+                <section class="flex w-[15%]">
+                    <img src="/images/search.png" alt="search" class="object-contain">
+                    <img src="/images/cart.png" alt="cart" class="object-contain">
+                </section>
+            </header>
+            <!-- MOBILE HEADER ENDS -->
+    
+            <!-- DESKTOP HEADER STARTS -->
+            <header class="sm:hidden md:flex w-[80%] justify-between my-10">
+                <!-- LOGO -->
+                <section>
+                    <h1 class="font-bold font-STIX text-semiBig cursor-pointer">ARTSY.</h1>
+                </section>
+    
+                <!-- DESKTOP NAV BAR -->
+                <nav class="font-Satoshi items-center flex justify-center w-[485px]">
+                    <ul class="flex gap-[47px] text-black font-normal text-normal">
+                        <li class="cursor-pointer">
+                            <a href="/index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cursor-pointer underline"><a href="/public/pages/marketplace.html">
+                            Marketplace
+                        </a></li>
+                        <li class="cursor-pointer">Auctions</li>
+                        <li class="cursor-pointer">Drop</li>
+                    </ul>
+                </nav>
+    
+                <!-- DESKTOP ICONS -->
+                <section class="flex items-center gap-3">
+                    <div>
+                        <img src="/images/Search-desktop.png" alt="search" class="object-contain cursor-pointer">
+                    </div>
+    
+                    <div>
+                        <img src="/images/cart-desktop.png" alt="cart" class="object-contain cursor-pointer">
+                    </div>
+    
+                    <div>
+                        <img src="/images/notification.png" alt="notification" class="object-contain cursor-pointer">
+                    </div>
+    
+                </section>
+            </header>
+            <!-- DESKTOP HEADER ENDS -->
+    
+            <!-- MOBILE MENU STARTS -->
+            <div class="w-full h-full absolute top-0 z-10 md:hidden sm:hidden flex justify-center mobile-nav-links bg-white">
+    
+                <div class="w-[90%] h-[90%] flex flex-col items-start mt-6">
+    
+                    <div class="w-full flex items-center justify-between">
+                        <h2 class="font-bold font-STIX text-normal my-auto">
+                            ARTSY.
+                        </h2>
+                        <div class="close w-[20px]">
+                            <img src="/images/close-mobile.png" alt="close-mobile">
+                        </div>
+                    </div>
+    
+                    <div class="mt-16">
+                        <ul class="flex flex-col items-start gap-4 w-full h-full font-Satoshi text-semi-normal">
+                            <li class="cursor-pointer">
+                                <a href="/index.html">
+                                    Home
+                                </a></li>
+                            <li class="cursor-pointer underline">
+                                <a href="/public/pages/marketplace.html">
+                                    Marketplace
+                                </a></li>
+                            <li class="cursor-pointer">
+                                <a href="/public/pages/auction.html">
+                                    Auctions
+                                </a></li>
+                            <li class="cursor-pointer">
+                                <a href="/public/pages/dropweb.html">
+                                    Drops
+                                </a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="w-full h-full flex items-end justify-end">
+                        <div class="h-[64px] w-[64px] bg-blue rounded-full flex items-center justify-center">
+                            <img src="/images/chat-logo.png" alt="chat-logo">
+                        </div>
                     </div>
                 </div>
-
             </div>
-
-            <!-- EXPLORE SECTION STARTS -->
-            <hr class="border-none h-[0.5px] bg-dark-grey w-full my-6">
-            <div class="flex w-[90%] items-center justify-between">
-                <h2 class="text-small text-dark-grey">
-                    Description
-                </h2>
-                
-                <div class="">
-                    <img src="/images/down-arrow.png" alt="arrow">
+            <!-- MOBILE MENU ENDS -->
+    
+        </main>
+    
+        <!-- HEADING FOR PHILOMENA MOBILE -->
+        <div class="md:flex flex-col items-center justify-center sm:hidden h-full w-full mt-3">
+            <div class="w-[80%] h-[30px] flex flex-col items-start justify-between my-8">
+                <div class="flex">
+                    <p class="text-light-grey font-Poppins font-thin text-semi-normal"><a href="/index.html">Home</a>/<a href="/public/pages/marketplace.html">Marketplace</a>/<a href="/public/pages/marketplace.html">Editorials</a>/</p><span class="text-black text-semi-normal my-auto">Boolean Egyptian</span>
                 </div>
             </div>
-
-            <hr class="border-none h-[0.5px] bg-dark-grey my-6 w-full">
-
-            <div class="flex w-[90%] items-center justify-between">
-                <h2 class="text-small text-dark-grey">
-                    Listings
-                </h2>
-                
-                <div class="">
-                    <img src="/images/down-arrow.png" alt="arrow">
+    
+            <div class="w-[80%] h-[1020px] border flex items-center justify-center">
+                <div class="border-r w-1/2 h-full grid place-items-center">
+                    <img src="/images/lady-desktop-marketplace.png" alt="lady-desktop-marketplace">
                 </div>
-            </div>
-
-            <hr class="border-none h-[0.5px] bg-dark-grey w-full my-6">
-
-            <div class="flex w-[90%] items-center justify-between">
-                <h2 class="text-small text-dark-grey">
-                    Status
-                </h2>
-                
-                <div class="">
-                    <img src="/images/down-arrow.png" alt="arrow">
-                </div>
-            </div>
-
-            <hr class="border-none h-[0.5px] bg-dark-grey w-full my-6">
-            <!-- EXPLORE SECTION ENDS -->
+    
+                <div class="w-1/2 h-full flex items-center flex-col justify-center">
+                    <div class="w-full h-[15%] border-b flex items-center justify-center">
+    
+                        <div class="w-[90%] flex items-center justify-between">
+                            <h1 class="text-semiBig font-bold">
+                                Boolean Egyptian
+                            </h1>
+                            <div class="flex items-center justify-center gap-2">
+                                <img src="/images/eth-desktop-marketplace.png" alt="eth-desktop-marketplace">
+                                <h2 class="font-STIX text-medium my-auto">0.09</h2>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="w-full h-[47%] flex items-center justify-center border-b">
+                        <div class="w-[90%]">
+                            <p class="text-medium">
+                                Creator: <span class="text-teal text-medium">Olumide Micheal</span>
+                            </p>
+                            <p class="text-dark-grey my-4 text-medium">
+                                Made in Greece
+                            </p>
             
-
-            <div class="flex items-start flex-col justify-center w-full my-20 gap-6">
-                <h1 class="text-semi-normal text-left leading-[37.82px]">
-                    More from this collection
-                </h1>
-                <div class="border w-full flex flex-col items-center h-[490px]">
-
-                    <div class="w-[95%] h-[5%] flex items-end justify-end my-2">
-                        <img src="/images//favorite.png" alt="favorite" class="h-[90%]">
-                    </div>
-
-                    <div class="h-[85%] w-[95%] grid place-items-center" style="background: url(/images/two-ladies.png); background-position: center center; background-repeat: no-repeat; background-size: cover;">
-                        <div class="h-[50px] w-full flex items-center justify-between">
-                            <div class="w-[50px] h-full border-grey rounded-full border grid place-items-center">
-                                <img src="/images/dark-back-arrow.png" alt="dark-back-arrow" class="w-[20%]">
+                            <p class="text-dark-grey my-4 text-medium">
+                                Total views : 3.7k
+                            </p>
+            
+                            <div class="flex items-start justify-start gap-3 w-[10%] my-3">
+                                <h1 class="text-medium">-</h1>
+                                <h1 class="text-medium">1</h1>
+                                <h1 class="text-medium">+</h1>
                             </div>
-
-                            <div class="w-[50px] h-full border-white rounded-full border grid place-items-center">
-                                <img src="/images/light-forward-arrow.png" alt="dark-back-arrow" class="w-[20%]">
+            
+                            <div class="flex items-start gap-5 h-[79px] mb-10 mt-6">
+                                <button class="w-[60%] h-full bg-blue rounded-[4px] text-white flex items-center justify-center gap-3">
+                                    <p class="text-normal">
+                                        Add to cart
+                                    </p>
+                                    <img src="/images/cart-arrow.png" alt="cart-arrow">
+                                </button>
+                                <div class="flex items-center justify-center w-[20%] h-full border rounded-[4px]">
+                                    <img src="/images/favorite.png" alt="favorite">
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+    
+                    <div class="w-full h-[13%] border-b flex items-center justify-center">
+                        <div class="flex w-[90%] items-center justify-between">
+                            <h2 class="text-medium text-dark-grey">
+                                Description
+                            </h2>
+                            
+                            <div class="">
+                                <img src="/images/arrow-down-desktop.png" alt="arrow">
                             </div>
                         </div>
                     </div>
-
-                    <div class="w-[95%] h-[5%] flex items-center justify-between my-auto">
-                        <h3 class="leading-[23.42px]">Sassy</h3>
-                        <div class="flex items-center justify-center gap-2 h-full">
-                            <img src="/images/eth-icon.png" alt="eth-icon" class="h-[90%]">
-                            <h3>3.20</h3>
+    
+                    <div class="w-full h-[13%] border-b flex items-center justify-center">
+                        <div class="flex w-[90%] items-center justify-between">
+                            <h2 class="text-medium text-dark-grey">
+                                Listings
+                            </h2>
+                            
+                            <div class="">
+                                <img src="/images/arrow-down-desktop.png" alt="arrow">
+                            </div>
                         </div>
                     </div>
-
+    
+                    <div class="flex w-[90%] items-center justify-between my-auto">
+                        <h2 class="text-medium text-dark-grey">
+                            Status
+                        </h2>
+                        
+                        <div class="">
+                            <img src="/images/arrow-down-desktop.png" alt="arrow">
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="w-[80%] h-[114px] my-36 grid place-items-center" style="box-shadow: 4px 4px 64px 0px rgba(0, 0, 0, 0.08);
+            ">
+                <div class="w-[90%] h-[90%] flex items-center justify-between">
+                    <h1 class="text-semi-medium my-auto">
+                        Explore more from this collection
+                    </h1>
+                    <div class="flex items-center gap-6 h-[59px]">
+                        <div class="h-full w-[59px] border rounded-full grid place-items-center cursor-pointer">
+                            <img src="/images/left-marketplace-arrow.png" alt="left-marketplace-arrow">
+                        </div>
+    
+                        
+                        <div class="h-full w-[59px] border rounded-full grid place-items-center cursor-pointer">
+                            <img src="/images/right-marketplace-arrow.png" alt="right-marketplace-arrow">
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    
+        <!-- EXPLORE SECTION DESKTOP -->
+        <div class="w-full h-[579px] flex gap-6 ml-[10%] mb-32">
+    
+            <div class="h-full w-[529px] border flex items-center justify-evenly flex-col">
+                <div class="w-[87%] h-[5%] flex items-end justify-end my-2">
+                    <img src="/images//favorite.png" alt="favorite" class="h-[90%]">
+                </div>
+    
+                <div class="h-[80%] w-[87%] grid place-items-center" style="background: url(/images/two-ladies.png); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                </div>
+    
+                <div class="w-[87%] h-[5%] flex items-center justify-between">
+                    <h3 class="leading-[23.42px] text-normal">Sassy</h3>
+                    <div class="flex items-center justify-center gap-2 h-full">
+                        <img src="/images/eth-icon.png" alt="eth-icon" class="h-[90%]">
+                        <h3 class="text-normal">3.20</h3>
+                    </div>
+                </div>    
+            </div>
+    
+    
+            <div class="h-full w-[529px] border flex items-center justify-evenly flex-col">
+                <div class="w-[87%] h-[5%] flex items-end justify-end my-2">
+                    <img src="/images//favorite.png" alt="favorite" class="h-[90%]">
+                </div>
+    
+                <div class="h-[80%] w-[87%] grid place-items-center" style="background: url(/images/escape-marketplace.png); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                </div>
+    
+                <div class="w-[87%] h-[5%] flex items-center justify-between">
+                    <h3 class="leading-[23.42px] text-normal">Sassy</h3>
+                    <div class="flex items-center justify-center gap-2 h-full">
+                        <img src="/images/eth-icon.png" alt="eth-icon" class="h-[90%]">
+                        <h3 class="text-normal">0.03</h3>
+                    </div>
+                </div>    
+            </div>
+    
+            <div class="h-full w-[529px] border flex items-center justify-evenly flex-col">
+                <div class="w-[87%] h-[5%] flex items-end justify-end my-2">
+                    <img src="/images//favorite.png" alt="favorite" class="h-[90%]">
+                </div>
+    
+                <div class="h-[80%] w-[87%] grid place-items-center" style="background: url(/images/flower-marketplace.png); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                </div>
+    
+                <div class="w-[87%] h-[5%] flex items-center justify-between">
+                    <h3 class="leading-[23.42px] text-normal"></h3>
+                    <div class="flex items-center justify-center gap-2 h-full">
+                        <img src="/images/eth-icon.png" alt="eth-icon" class="h-[90%]">
+                        <h3 class="text-normal">3.20</h3>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    
+        <!-- EXPLORE BUTTON -->
+        <div class="w-full h-[80px] grid place-items-center my-20">
+            <button class="h-full w-[15%] p-[2px] grid place-items-center rounded-[15px]" style="background: linear-gradient(180deg, #78A3AD 0%, rgba(192, 86, 9, 0.49) 100%);
+            ">
+            <div class="w-full h-full my-auto bg-white rounded-[14px] grid place-items-center">
+                <p class="text-normal font-normal" style="background: linear-gradient(94.97deg, #78A3AD 24.64%, rgba(192, 86, 9, 0.49) 118.54%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;">
+                    Explore all
+                </p>
+            </div>
+                
+            </button>
         </div>
     </div>
 
