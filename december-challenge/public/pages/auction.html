@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/styles.css">
+    <!-- FONTSHARE API -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&f[]=clash-display@200,400,700,500,600,300&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE FONT API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Bellefair&family=Poppins&family=Rubik:wght@500&family=STIX+Two+Text:wght@700&display=swap" rel="stylesheet">
+
+    <title>ARTSY | Marketplace</title>
+</head>
+<body class="font-Satoshi overflow-x-hidden">
+
+    <main class="w-screen flex flex-col items-center justify-center">
+        <!-- MOBILE HEADER STARTS -->
+        <header class="md:hidden flex w-[95%] justify-between my-5">
+
+            <!-- MOBILE MENU BUTTON -->
+            <section class="flex items-center w-[10%] menu">
+                <img src="/images/menu.png" alt="menu button">
+            </section>
+
+            <!-- MOBILE LOGO -->
+            <section class="flex items-baseline justify-center w-[75%]">
+                <h2 class="font-bold font-STIX text-normal">
+                    ARTSY.
+                </h2>
+            </section>
+
+            <!-- MOBILE ICONS -->
+            <section class="flex w-[15%]">
+                <img src="/images/search.png" alt="search" class="object-contain">
+                <img src="/images/cart.png" alt="cart" class="object-contain">
+            </section>
+        </header>
+        <!-- MOBILE HEADER ENDS -->
+
+        <!-- DESKTOP HEADER STARTS -->
+        <header class="sm:hidden md:flex w-[80%] justify-between my-10">
+            <!-- LOGO -->
+            <section>
+                <h1 class="font-bold font-STIX text-semiBig cursor-pointer">ARTSY.</h1>
+            </section>
+
+            <!-- DESKTOP NAV BAR -->
+            <nav class="font-Satoshi items-center flex justify-center w-[485px]">
+                <ul class="flex gap-[47px] text-black font-normal text-normal">
+                    <li class="cursor-pointer">
+                        <a href="/index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cursor-pointer"><a href="/public/pages/marketplace.html">
+                        Marketplace
+                    </a></li>
+                    <li class="cursor-pointer underline">Auctions</li>
+                    <li class="cursor-pointer">Drop</li>
+                </ul>
+            </nav>
+
+            <!-- DESKTOP ICONS -->
+            <section class="flex items-center gap-3">
+                <div>
+                    <img src="/images/Search-desktop.png" alt="search" class="object-contain cursor-pointer">
+                </div>
+
+                <div>
+                    <img src="/images/cart-desktop.png" alt="cart" class="object-contain cursor-pointer">
+                </div>
+
+                <div>
+                    <img src="/images/notification.png" alt="notification" class="object-contain cursor-pointer">
+                </div>
+
+            </section>
+        </header>
+        <!-- DESKTOP HEADER ENDS -->
+
+        <!-- MOBILE MENU STARTS -->
+        <div class="w-full h-full absolute top-0 z-10 md:hidden sm:hidden flex justify-center mobile-nav-links bg-white">
+
+            <div class="w-[90%] h-[90%] flex flex-col items-start mt-6">
+
+                <div class="w-full flex items-center justify-between">
+                    <h2 class="font-bold font-STIX text-normal my-auto">
+                        ARTSY.
+                    </h2>
+                    <div class="close w-[20px]">
+                        <img src="/images/close-mobile.png" alt="close-mobile">
+                    </div>
+                </div>
+
+                <div class="mt-16">
+                    <ul class="flex flex-col items-start gap-4 w-full h-full font-Satoshi text-semi-normal">
+                        <li class="cursor-pointer">
+                            <a href="/index.html">
+                                Home
+                            </a></li>
+                        <li class="cursor-pointer">
+                            <a href="/public/pages/marketplace.html">
+                                Marketplace
+                            </a></li>
+                        <li class="cursor-pointer underline">
+                            <a href="/public/pages/auction.html">
+                                Auctions
+                            </a></li>
+                        <li class="cursor-pointer">
+                            <a href="/public/pages/dropweb.html">
+                                Drops
+                            </a></li>
+                    </ul>
+                </div>
+
+                <div class="w-full h-full flex items-end justify-end">
+                    <div class="h-[64px] w-[64px] bg-blue rounded-full flex items-center justify-center">
+                        <img src="/images/chat-logo.png" alt="chat-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MOBILE MENU ENDS -->
+
+    </main>
+
+    <!-- DESKTOP VIEW STARTS -->
+    <div class="md:contents sm:hidden">
+        <section class="md:flex flex-col items-center justify-center sm:hidden h-full w-full mt-8">
+            <div class="w-[80%] h-full flex flex-col items-start justify-between gap-10">
+                <div class="flex">
+                    <p class="text-light-grey font-Poppins font-thin text-semi-normal"><a href="/index.html">Home/</a></p><span class="text-black text-semi-normal"> Auctions</span>
+                </div>
+    
+                <h2 class="text-black text-semi-normal font-medium">
+                    Here’s an overview of products actively on auction, explore!
+                </h2>
+            </div>
+        </section>
+    
+        <section class="w-full h-[396px] flex gap-6 ml-[10%] my-16">
+        
+            <div class="h-full w-[485px] flex items-center justify-end flex-col" style="background: url(/images/sunset-lady-auction.png); background-position: center center; background-repeat: no-repeat; background-size: contain;">
+                <div class="w-[85%] h-[15%] border-[0.5px] border-white rounded-[8px] mb-10" style="background: rgba(245, 244, 244, 0.24);">
+                    <h1 class="font-STIX text-white text-normal font-light leading-[64px] ml-8">
+                        6hr : 40mins: 15s
+                    </h1>
+                </div>
+            </div>
+    
+            <div class="h-full w-[485px] flex items-center justify-end flex-col" style="background: url(/images/auction-light.png); background-position: center center; background-repeat: no-repeat; background-size: contain;">
+                <div class="w-[85%] h-[15%] border-[0.5px] border-white rounded-[8px] mb-10" style="background: rgba(245, 244, 244, 0.24);">
+                    <h1 class="font-STIX text-white text-normal font-light leading-[64px] ml-8">
+                        6hr : 40mins: 15s
+                    </h1>
+                </div>
+            </div>
+    
+            <div class="h-full w-[485px] flex items-center justify-end flex-col" style="background: url(/images/auction-cloth.png); background-position: center center; background-repeat: no-repeat; background-size: contain;">
+                <div class="w-[85%] h-[15%] border-[0.5px] border-white rounded-[8px] mb-10" style="background: rgba(245, 244, 244, 0.24);">
+                    <h1 class="font-STIX text-white text-normal font-light leading-[64px] ml-8">
+                        6hr : 40mins: 15s
+                    </h1>
+                </div>
+            </div>
+        </section>
+    
+        <section class="my-24 flex items-start justify-center w-full">
+            <h1 class="font-bold leading-[54px] text-semi-medium w-[80%]">
+                Top bids from popular creators
+            </h1>
+        </section>
+    
+        <section class="w-full grid place-items-center mb-32">
+            <div class="w-[80%] h-full flex items-center justify-between">
+                <div class="w-[48%] h-full flex-col items-start gap-10">
+                    <div class="border-light-grey border rounded-[15px] flex flex-col items-center justify-center">
+                        <div class="flex w-[90%] items-end justify-end h-[60px] my-3">
+                            <div class="h-full w-[60px] grid place-items-center border border-light-grey rounded-full">
+                                <img src="/images/love-auction.png" alt="love-auction">
+                            </div>
+                        </div>
+                        <div class="w-full h-[280px]" style="background: url(/images/out-of-box-auction.png); background-position: center center; background-repeat: no-repeat; background-size: contain;"></div>
+    
+                        <div class="w-full flex items-center justify-center my-2">
+                            <h1 class="font-bold leading-[64px] text-medium w-[90%]">
+                                Out of box
+                            </h1>
+                        </div>
+                    </div>
+    
+                    <h1 class="text-light mt-4 text-grey text-normal leading-[64px]">
+                        Creator : <span class="text-normal text-black">Dan Murray</span>
+                    </h1>
+    
+                    <h1 class="text-light text-grey text-normal leading-[64px]">
+                        Date : <span class="text-normal text-black">12/08/22</span>
+                    </h1>
+    
+                    <h1 class="text-light text-grey text-normal leading-[64px]">
+                        Highest bid : <span class="text-normal text-black">0.57 ETH</span>
+                    </h1>
+    
+                    <div class="w-full h-[120px] bg-lighter-grey rounded-[10px] my-4 grid place-items-center">
+                        <div class="w-[90%] h-[90%] flex items-center justify-between">
+                            <div class="w-[30%] h-[90%] flex flex-col justify-between items-start">
+                                <h2 class="text-normal text-grey leading-[50px]">Currrent bid</h2>
+                                <h2 class="leading-[50px] font-bold text-normal">0.987 ETH</h2>
+                            </div>
+                            <button class="w-[50%] h-[60%] bg-blue text-white text-semi-normal rounded-[3.5px]">Place bid</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="w-[48%] h-full flex-col items-start gap-10">
+                    <div class="border-light-grey border rounded-[15px] flex flex-col items-center justify-center">
+                        <div class="flex w-[90%] items-end justify-end h-[60px] my-3">
+                            <div class="h-full w-[60px] grid place-items-center border border-lighter-grey rounded-full">
+                                <img src="/images/love-auction.png" alt="love-auction">
+                            </div>
+                        </div>
+                        <div class="w-full h-[280px]" style="background: url(/images/falling-apart.png); background-position: center center; background-repeat: no-repeat; background-size: contain;"></div>
+    
+                        <div class="w-full flex items-center justify-center my-2">
+                            <h1 class="font-bold leading-[64px] text-medium w-[90%]">
+                                Falling apart
+                            </h1>
+                        </div>
+                    </div>
+    
+                    <h1 class="text-light mt-4 text-grey text-normal leading-[64px]">
+                        Creator : <span class="text-normal text-black">Jacob banks</span>
+                    </h1>
+    
+                    <h1 class="text-light text-grey text-normal leading-[64px]">
+                        Date : <span class="text-normal text-black">12/08/22</span>
+                    </h1>
+    
+                    <h1 class="text-light text-grey text-normal leading-[64px]">
+                        Highest bid : <span class="text-normal text-black">0.34 ETH</span>
+                    </h1>
+    
+                    <div class="w-full h-[120px] bg-lighter-grey rounded-[10px] my-4 grid place-items-center">
+                        <div class="w-[90%] h-[90%] flex items-center justify-between">
+                            <div class="w-[30%] h-[90%] flex flex-col justify-between items-start">
+                                <h2 class="text-normal text-grey leading-[50px]">Currrent bid</h2>
+                                <h2 class="leading-[50px] font-bold text-normal">0.99 ETH</h2>
+                            </div>
+                            <button class="w-[50%] h-[60%] bg-blue text-white text-semi-normal rounded-[3.5px]">Place bid</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- DESKTOP VIEW ENDS -->
+
+    <!-- MOBILE VIEW STARTS -->
+    <div class="md:hidden sm:contents">
+        <section class=" flex items-center justify-center h-full w-full mt-8">
+            <div class="w-[95%] h-full flex flex-col items-center justify-between">
+                <h2 class="text-black font-normal text-small">
+                    Here’s an overview of products actively on auction, explore!
+                </h2>
+            </div>
+        </section>
+
+        <!-- OVERFLOW SCROLL IMAGES -->
+        <section class="flex flex-col my-10">
+            <div class="flex overflow-x-scroll hide-scroll-bar">
+                <div class="flex flex-nowrap ml-[2.5%]">
+                    <div class="inline-block px-2" style="background: url(/images/sunset-lady-auction.png) no-repeat; background-size: contain;">
+                        <div class="w-[228px] h-[195px] overflow-hidden flex items-end justify-center">
+                            <div class="w-[80%] h-[20%] border-white border-[0.5px] mb-5 bg-lightest-grey rounded-[8px] flex items-center justify-center">
+                                <h1 class="leading-[25px] font-STIX text-small text-white">6hr : 40mins: 15s</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inline-block px-3" style="background: url(/images/flower-auction-mobile.png) no-repeat; background-size: contain;">
+                        <div class="w-[228px] h-[195px] overflow-hidden flex items-end justify-center">
+                            <div class="w-[80%] h-[20%] border-white border-[0.5px] mb-5 bg-lightest-grey rounded-[8px] flex items-center justify-center">
+                                <h1 class="leading-[25px] font-STIX text-small text-white">6hr : 40mins: 15s</h1>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="inline-block px-3" style="background: url(/images/auction-cloth.png) no-repeat; background-size: contain;">
+                        <div class="w-[228px] h-[195px] overflow-hidden flex items-end justify-center">
+                            <div class="w-[80%] h-[20%] border-white border-[0.5px] mb-5 bg-lightest-grey rounded-[8px] flex items-center justify-center">
+                                <h1 class="leading-[25px] font-STIX text-small text-white">6hr : 40mins: 15s</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </section>
+
+        <section class="flex items-start justify-center w-full">
+            <h1 class="font-bold leading-[27px] text-semi-normal w-[95%]">
+                Top bids from popular creators
+            </h1>
+        </section>
+
+        <section class="w-full grid place-items-center my-10">
+            <div class="w-[95%] h-full flex flex-col items-center justify-center gap-8">
+                <div class="w-full h-full flex-col items-start gap-5">
+                    <div class="border-light-grey border rounded-[15px] flex flex-col items-center justify-center">
+                        <div class="flex w-[90%] items-end justify-end h-[30px] my-3">
+                            <div class="h-full w-[30px] grid place-items-center border border-light-grey rounded-full">
+                                <img src="/images/mobile-love.png" alt="love-auction">
+                            </div>
+                        </div>
+                        <div class="w-[90%] h-[184px]" style="background: url(/images/mobile-out-of-box.png); background-position: center center; background-repeat: no-repeat; background-size: cover;"></div>
+    
+                        <div class="w-[90%] flex items-center justify-between my-2">
+                            <h1 class="font-bold leading-[27px] text-small">
+                                Out of box
+                            </h1>
+                            <h1 class="font-bold leading-[27px] text-small">
+                                0.57 ETH
+                            </h1>
+                        </div>
+                    </div>
+    
+                    <h1 class="text-light my-6 text-grey text-semi-normal leading-[27px]">
+                        Creator : <span class="text-semi-normal text-teal font-bold">Dan Murray</span>
+                    </h1>
+    
+                    <h1 class="text-light mb-6 text-grey text-semi-normal leading-[27px]">
+                        Date : <span class="text-semi-normal text-black">12/08/22</span>
+                    </h1>
+    
+    
+                    <div class="w-full h-[85px] bg-lighter-grey rounded-[10px] my-4 grid place-items-center">
+                        <div class="w-[90%] h-[90%] flex items-center justify-between">
+                            <div class="w-[50%] h-[90%] flex flex-col justify-between items-start">
+                                <h2 class="text-small text-grey leading-[27px]">Currrent bid</h2>
+                                <h2 class="leading-[27px] font-bold text-semi-normal">0.987 ETH</h2>
+                            </div>
+                            <button class="w-[50%] h-[60%] bg-blue text-white text-small rounded-[3.5px]">Place bid</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="w-full h-full flex-col items-start gap-5">
+                    <div class="border-light-grey border rounded-[15px] flex flex-col items-center justify-center">
+                        <div class="flex w-[90%] items-end justify-end h-[30px] my-3">
+                            <div class="h-full w-[30px] grid place-items-center border border-light-grey rounded-full">
+                                <img src="/images/faint-heart.png" alt="love-auction">
+                            </div>
+                        </div>
+                        <div class="w-[90%] h-[184px]" style="background: url(/images/falling-apart-auction.png); background-position: center center; background-repeat: no-repeat; background-size: cover;"></div>
+    
+                        <div class="w-[90%] flex items-center justify-between my-2">
+                            <h1 class="font-bold leading-[27px] text-small">
+                                Falling apart
+                            </h1>
+                            <h1 class="font-bold leading-[27px] text-small">
+                                0.34 ETH
+                            </h1>
+                        </div>
+                    </div>
+    
+                    <h1 class="text-light my-6 text-grey text-semi-normal leading-[27px]">
+                        Creator : <span class="text-semi-normal text-teal font-bold">Jacob banks</span>
+                    </h1>
+    
+                    <h1 class="text-light mb-6 text-grey text-semi-normal leading-[27px]">
+                        Date : <span class="text-semi-normal text-black">12/08/22</span>
+                    </h1>
+    
+    
+                    <div class="w-full h-[85px] bg-lighter-grey rounded-[10px] my-4 grid place-items-center">
+                        <div class="w-[90%] h-[90%] flex items-center justify-between">
+                            <div class="w-[50%] h-[90%] flex flex-col justify-between items-start">
+                                <h2 class="text-small text-grey leading-[27px]">Currrent bid</h2>
+                                <h2 class="leading-[27px] font-bold text-semi-normal">0.99 ETH</h2>
+                            </div>
+                            <button class="w-[50%] h-[60%] bg-blue text-white text-small rounded-[3.5px]">Place bid</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOAD MORE BUTTON MOBILE -->
+        <div class="w-full h-[53px] flex items-center justify-center my-8 md:hidden">
+            <h1 class="my-auto mr-4 font-Satoshi font-light text-semi-normal text-grey">Load more</h1>
+            <div class="w-[53px] h-[53px] border border-dark-grey rounded-full grid place-items-center mr-6 md:hidden">
+                <img src="/images/explore-arrow.png" alt="arrow">
+            </div>
+        </div>
+        <!-- LOAD MORE BUTTON MOBILE ENDS -->
+          
+    </div>
+    <!-- MOBILE VIEW ENDS -->
+
+    <script src="/public/scripts/mobile.js"></script>
+    <script src="/public/scripts/script.js"></script>
+</body>
+</html>
