@@ -9,6 +9,7 @@ module.exports = {
       'lighter-grey': '#E2E2E2',
       'dark-grey': '#333333',
       'black': '#292929',
+      'dark': '#000000',
       'white': '#ffffff',
       'creators-color': 'rgba(0, 0, 0, 0.57)',
       'blue': 'rgba(51, 65, 193, 1)',
