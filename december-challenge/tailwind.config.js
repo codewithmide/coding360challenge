@@ -15,6 +15,9 @@ module.exports = {
       'light-green': 'rgba(175, 176, 145, 1)',
       'teal': '#006ca2',
       'lightest-grey': 'rgba(245, 244, 244, 0.24)',
+      'green': 'rgba(62, 160, 59, 1)',
+      'new-dark-grey': 'rgba(153, 158, 165, 1)',
+      'new-light-grey': 'rgba(184, 186, 188, 1)'
     },
     fontWeight: {
       'thin': 100,
