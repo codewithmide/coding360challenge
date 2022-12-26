@@ -1650,8 +1650,8 @@ video {
   gap: 6rem;
 }
 
-.gap-20 {
-  gap: 5rem;
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-\[5px\] {
@@ -1660,10 +1660,6 @@ video {
 
 .gap-0 {
   gap: 0px;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .overflow-hidden {
