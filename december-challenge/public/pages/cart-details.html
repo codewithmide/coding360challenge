@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/styles.css">
+    <!-- FONTSHARE API -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&f[]=clash-display@200,400,700,500,600,300&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE FONT API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Bellefair&family=Poppins&family=Rubik:wght@500&family=STIX+Two+Text:wght@700&display=swap" rel="stylesheet">
+
+    <title>ARTSY | Marketplace</title>
+</head>
+<body class="font-Satoshi overflow-x-hidden">
+
+    <main class="w-screen flex flex-col items-center justify-center">
+        <!-- MOBILE HEADER STARTS -->
+        <header class="md:hidden flex w-[95%] justify-between my-5">
+
+            <!-- MOBILE MENU BUTTON -->
+            <section class="flex items-center w-[10%] menu">
+                <img src="/images/menu.png" alt="menu button">
+            </section>
+
+            <!-- MOBILE LOGO -->
+            <section class="flex items-baseline justify-center w-[75%]">
+                <h2 class="font-bold font-STIX text-normal">
+                    <a href="/index.html">
+                        ARTSY.
+                    </a>
+                </h2>
+            </section>
+
+            <!-- MOBILE ICONS -->
+            <section class="flex w-[15%]">
+                <a href="#" class="my-auto">
+                    <img src="/images/search.png" alt="search" class="object-contain">
+                </a>
+
+                <a href="/public/pages/checkout.html" class="my-auto">
+                    <img src="/images/cart.png" alt="cart" class="object-contain">
+                </a>
+            </section>
+
+        </header>
+        <!-- MOBILE HEADER ENDS -->
+
+        <!-- DESKTOP HEADER STARTS -->
+        <header class="sm:hidden md:flex w-[80%] justify-between my-10">
+            <!-- LOGO -->
+            <section>
+                <h1 class="font-bold font-STIX text-semiBig cursor-pointer">
+                    <a href="/index.html">
+                        ARTSY.
+                    </a>
+                </h1>
+            </section>
+
+            <!-- DESKTOP NAV BAR -->
+            <nav class="font-Satoshi items-center flex justify-center w-[485px]">
+                <ul class="flex gap-[47px] text-black font-normal text-normal">
+                    <li class="cursor-pointer">
+                        <a href="/index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cursor-pointer underline"><a href="/public/pages/marketplace.html">
+                        Marketplace
+                    </a></li>
+                    <li class="cursor-pointer"><a href="/public/pages/auction.html">
+                        Auctions
+                    </a></li>
+                    <li class="cursor-pointer"><a href="/public/pages/dropweb.html">
+                        Drop
+                    </a></li>
+                </ul>
+            </nav>
+
+            <!-- DESKTOP ICONS -->
+            <section class="flex items-center gap-3">
+                <a href="#">
+                    <img src="/images/Search-desktop.png" alt="search" class="object-contain cursor-pointer">
+                </a>
+
+                <a href="/public/pages/checkout.html">
+                    <img src="/images/cart-desktop.png" alt="cart" class="object-contain cursor-pointer">
+                </a>
+
+                <div>
+                    <img src="/images/notification.png" alt="notification" class="object-contain cursor-pointer">
+                </div>
+
+            </section>
+
+        </header>
+        <!-- DESKTOP HEADER ENDS -->
+
+        <!-- MOBILE MENU STARTS -->
+        <div class="w-full h-full absolute top-0 z-10 md:hidden sm:hidden flex justify-center mobile-nav-links bg-white">
+
+            <div class="w-[90%] h-[90%] flex flex-col items-start mt-6">
+
+                <div class="w-full flex items-center justify-between">
+                    <h2 class="font-bold font-STIX text-normal my-auto">
+                        ARTSY.
+                    </h2>
+                    <div class="close w-[20px]">
+                        <img src="/images/close-mobile.png" alt="close-mobile">
+                    </div>
+                </div>
+
+                <div class="mt-16">
+                    <ul class="flex flex-col items-start gap-4 w-full h-full font-Satoshi text-semi-normal">
+                        <li class="cursor-pointer">
+                            <a href="/index.html">
+                                Home
+                            </a></li>
+                        <li class="cursor-pointer underline">
+                            <a href="/public/pages/marketplace.html">
+                                Marketplace
+                            </a></li>
+                        <li class="cursor-pointer">
+                            <a href="/public/pages/auction.html">
+                                Auctions
+                            </a></li>
+                        <li class="cursor-pointer">
+                            <a href="/public/pages/dropweb.html">
+                                Drops
+                            </a></li>
+                    </ul>
+                </div>
+
+                <div class="w-full h-full flex items-end justify-end">
+                    <div class="h-[64px] w-[64px] bg-blue rounded-full flex items-center justify-center">
+                        <img src="/images/chat-logo.png" alt="chat-logo">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- MOBILE MENU ENDS -->
+
+    </main>
+
+    <!-- cart navigation section starts -->
+    <section class="w-screen md:grid place-items-center sm:hidden">
+        <div class="w-[40%] flex justify-between items-center border-b border-lighter-grey my-10 text-semi-normal">
+            <a href="/public/pages/checkout.html">
+                Shopping cart
+            </a>
+            <a href="/public/pages/cart-details.html" class="font-bold border-b">
+                Shopping details
+            </a>
+            <a href="/public/pages/payment-details.html">
+                Payment details
+            </a>
+        </div>
+    </section>
+    <!-- cart navigation section ends -->
+
+    <!-- shipping details starts -->
+    <section class="w-screen grid place-items-center my-10">
+
+        <div class="md:w-[85%] sm:w-[95%] flex md:justify-between sm:justify-center">
+
+            <div class="md:w-[48%] sm:w-full flex flex-col gap-6">
+
+                <div class="w-full flex flex-col text-grey gap-2">
+                    <label for="email">Your email</label>
+                    <input type="text" name="email" id="email" placeholder="aanuoluwateenah@gmail.com" class="h-[60px] bg-lighter-grey pl-10 my-1 rounded-[10px] outline-none active:bg-light-grey border-light-grey border">
+
+                    <section class="gap-0 flex">
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="text-small font-Satoshi font-light">Get updates about new drops & exclusive offers</p>
+                        </label>
+                    </section>
+                </div>
+
+                <div class="w-full flex flex-col text-grey gap-2">
+                    <label for="name">Your fullname</label>
+                    <input type="text" name="name" id="name" placeholder="Anuoluwapo Bamisaye" class="h-[60px] bg-lighter-grey pl-10 my-1 rounded-[10px] outline-none active:bg-light-grey border-light-grey border">
+                </div>
+                
+                <div class="w-full flex flex-col text-grey gap-2">
+                    <label for="wallet">Choose a wallet</label>
+                    <select class="h-[60px] bg-lighter-grey pl-10 my-1 rounded-[10px] outline-none active:bg-light-grey appearance-none border-light-grey border" style="-webkit-appearance:none;
+                    -moz-appearance:none;
+                    appearance:none;">
+                        <option value="EMPTY"></option>
+                        <option value="METAMASK">Metamask</option>
+                        <option value="COINBASE">Coinbase</option>
+                    </select>
+                </div>
+
+                <div class="w-full flex flex-col text-grey gap-2">
+                    <label for="wallet">City</label>
+                    <select class="h-[60px] bg-lighter-grey pl-10 my-1 rounded-[10px] outline-none active:bg-light-grey appearance-none border-light-grey border" style="-webkit-appearance:none;
+                    -moz-appearance:none;
+                    appearance:none;">
+                        <option value="EMPTY"></option>
+                        <option value="LAG">Lagos</option>
+                        <option value="ABJ">Abuja</option>
+                        <option value="CAL">Calabar</option>
+                        <option value="PHC">Port Harcourt</option>
+                        <option value="UYO">Uyo</option>
+                    </select>
+                </div>
+
+                <div class="flex w-full items-center justify-between">
+
+                    <div class="w-[49%] flex flex-col text-grey gap-2">
+                        <label for="wallet">Country</label>
+                        <select class="h-[60px] bg-lighter-grey pl-6 my-1 rounded-[10px] outline-none active:bg-light-grey appearance-none border-light-grey border" style="-webkit-appearance:none;
+                        -moz-appearance:none;
+                        appearance:none;">
+                            <option value="EMPTY"></option>
+                            <option value="LAG">Nigeria</option>
+                            <option value="ABJ">Germany</option>
+                            <option value="CAL">United Kingdom</option>
+                            <option value="PHC">United states of America</option>
+                            <option value="UYO">Canada</option>
+                        </select>
+                    </div>
+                    
+                    <div class="w-[49%] flex flex-col text-grey gap-2">
+                        <label for="postal code">Postal code</label>
+                        <input type="number" name="postal" id="postal" placeholder="001001" class="h-[60px] bg-lighter-grey pl-6 my-1 rounded-[10px] outline-none active:bg-light-grey appearance-none border-light-grey border" style="-webkit-appearance:none;
+                        -moz-appearance:none;
+                        appearance:none;">
+                    </div>
+
+                </div>
+
+                <div class="w-full flex flex-col text-grey gap-2">
+                    <label for="wallet">Phone number</label>
+                    <input type="tel" name="telephone" id="phone" placeholder="+2347088899861" class="h-[60px] bg-lighter-grey pl-10 my-1 rounded-[10px] outline-none active:bg-light-grey appearance-none border-light-grey border" style="-webkit-appearance:none;
+                    -moz-appearance:none;
+                    appearance:none;">
+                </div>
+
+                <div class="w-full h-[80px] my-3">
+                    <a href="/public/pages/payment-details.html">
+                        <button class="w-full h-full bg-blue text-white">
+                            Proceed to payment
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="md:w-[48%] sm:w-full flex flex-col gap-4">
+                <div class="md:flex sm:hidden flex-col items-center justify-center my-8">
+                    <hr class="border border-lighter-grey w-full">
+            
+                    <div class="w-full h-[196px] flex items-center justify-between">
+                        <div class="h-[120px] flex gap-6 items-center justify-center">
+                            <div class="w-1/2 h-full">
+                                <img src="/images/checkout-philomena.png" alt="checkout-philomena" class="w-full h-full" style="object-fit: contain;">
+                            </div>
+                            <div class="flex flex-col h-full items-start justify-between">
+                                <p>Philomena '22</p>
+                                <p class="text-light-grey">Clearamane</p>
+                                <p class="text-light-grey">Size: <span class="text-dark">200 ft</span></p>
+                                <div class="h-[20%] flex gap-4 text-normal">
+                                    <p class="cursor-pointer">-</p>
+                                    <h1>1</h1>
+                                    <p class="cursor-pointer">+</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center h-[120px] justify-between w-[10%]">
+                            <div class="border border-light-grey rounded-full h-[40px] w-[40px] grid place-items-center">
+                                <img src="/images/checkout-cancel-desktop.png" alt="checkout-cancel-desktop">
+                            </div>
+                            <h1 class="text-dark font-STIX text-semi-normal">$35.50</h1>
+                        </div>
+                    </div>
+            
+                    <hr class="border border-lighter-grey w-full">
+            
+                    <div class="w-full h-[196px] flex items-center justify-between">
+                        <div class="h-[120px] flex gap-6 items-center justify-center">
+                            <div class="w-1/2 h-full">
+                                <img src="/images/warpped-checkout-desktop.png" alt="checkout-warpped" class="w-full h-full" style="object-fit: contain;">
+                            </div>
+                            <div class="flex flex-col h-full items-start justify-between">
+                                <p>Warpped '22</p>
+                                <p class="text-light-grey">Clearamane</p>
+                                <p class="text-light-grey">Size: <span class="text-dark">200 ft</span></p>
+                                <div class="h-[20%] flex gap-4 text-normal">
+                                    <p class="cursor-pointer">-</p>
+                                    <h1>1</h1>
+                                    <p class="cursor-pointer">+</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center h-[120px] justify-between w-[10%]">
+                            <div class="border border-light-grey rounded-full h-[40px] w-[40px] grid place-items-center">
+                                <img src="/images/checkout-cancel-desktop.png" alt="checkout-cancel-desktop">
+                            </div>
+                            <h1 class="text-dark font-STIX text-semi-normal">$39.50</h1>
+                        </div>
+                    </div>
+            
+                    <hr class="border border-lighter-grey w-full">
+            
+                    <div class="w-full h-[196px] flex items-center justify-between">
+                        <div class="h-[120px] flex gap-6 items-center justify-center">
+                            <div class="w-1/2 h-full">
+                                <img src="/images/ellipsia-checkout-desktop.png" alt="checkout-elipsia" class="w-full h-full" style="object-fit: contain;">
+                            </div>
+                            <div class="flex flex-col h-full items-start justify-between">
+                                <p>Ellipsia</p>
+                                <p class="text-light-grey">Clearamane</p>
+                                <p class="text-light-grey">Size: <span class="text-dark">200 ft</span></p>
+                                <div class="h-[20%] flex gap-4 text-normal">
+                                    <p class="cursor-pointer">-</p>
+                                    <h1>4</h1>
+                                    <p class="cursor-pointer">+</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center h-[120px] justify-between w-[10%]">
+                            <div class="border border-light-grey rounded-full h-[40px] w-[40px] grid place-items-center">
+                                <img src="/images/checkout-cancel-desktop.png" alt="checkout-cancel-desktop">
+                            </div>
+                            <h1 class="text-dark font-STIX text-semi-normal">$35.50</h1>
+                        </div>
+                    </div>
+            
+                    <hr class="border border-lighter-grey w-full">
+                </div>
+
+                <div class="w-full flex flex-col items-center justify-center gap-4">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="text-grey">Products in cart:</p>
+                        <p>3 items</p>
+                    </div>
+    
+                    <div class="w-full flex items-center justify-between">
+                        <p class="text-grey">Shipping:</p>
+                        <p>$2.50</p>
+                    </div>
+    
+                    <div class="w-full flex items-center justify-between">
+                        <p class="text-grey">Total:</p>
+                        <p>$114.00</p>
+                    </div>
+    
+                    <div class="w-full border-dashed border border-light-grey mt-2 md:hidden"></div>
+    
+                    <div class="w-full flex items-center justify-between mb-8 md:hidden">
+                        <p class="text-grey">Grand total:</p>
+                        <p>$116.50</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- shipping details ends -->
+
+    <script src="/public/scripts/mobile.js"></script>
+    <script src="/public/scripts/script.js"></script>
+
+</body>
+</html>
