@@ -907,6 +907,10 @@ video {
   margin-bottom: 12rem;
 }
 
+.box-border {
+  box-sizing: border-box;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -1295,6 +1299,14 @@ video {
   height: 80px;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[80vh\] {
+  height: 80vh;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -1617,6 +1629,26 @@ video {
 
 .w-\[87\%\] {
   width: 87%;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
+.w-5\/6 {
+  width: 83.333333%;
+}
+
+.w-1\/6 {
+  width: 16.666667%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
+.w-2\/4 {
+  width: 50%;
 }
 
 .cursor-pointer {

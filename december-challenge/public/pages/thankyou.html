@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/styles.css">
+    <!-- FONTSHARE API -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&f[]=clash-display@200,400,700,500,600,300&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE FONT API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Bellefair&family=Poppins&family=Rubik:wght@500&family=STIX+Two+Text:wght@700&display=swap" rel="stylesheet">
+
+    <title>ARTSY | Marketplace</title>
+</head>
+<body class="font-Satoshi overflow-x-hidden box-border">
+
+    <main class="w-screen flex flex-col items-center justify-center z-20" style="z-index: 100 !important;">
+        <!-- MOBILE HEADER STARTS -->
+        <header class="md:hidden flex w-[95%] justify-between my-5">
+
+            <!-- MOBILE MENU BUTTON -->
+            <section class="flex items-center w-[10%] menu">
+                <img src="/images/menu.png" alt="menu button">
+            </section>
+
+            <!-- MOBILE LOGO -->
+            <section class="flex items-baseline justify-center w-[75%]">
+                <h2 class="font-bold font-STIX text-normal">
+                    <a href="/index.html">
+                        ARTSY.
+                    </a>
+                </h2>
+            </section>
+
+            <!-- MOBILE ICONS -->
+            <section class="flex w-[15%]">
+                <a href="#" class="my-auto">
+                    <img src="/images/search.png" alt="search" class="object-contain">
+                </a>
+
+                <a href="/public/pages/checkout.html" class="my-auto">
+                    <img src="/images/empty-mobile-cart.png" alt="cart" class="object-contain">
+                </a>
+            </section>
+
+        </header>
+        <!-- MOBILE HEADER ENDS -->
+
+        <!-- DESKTOP HEADER STARTS -->
+        <header class="sm:hidden md:flex w-[80%] justify-between my-10">
+            <!-- LOGO -->
+            <section>
+                <h1 class="font-bold font-STIX text-semiBig cursor-pointer">
+                    <a href="/index.html">
+                        ARTSY.
+                    </a>
+                </h1>
+            </section>
+
+            <!-- DESKTOP NAV BAR -->
+            <nav class="font-Satoshi items-center flex justify-center w-[485px]">
+                <ul class="flex gap-[47px] text-black font-normal text-normal">
+                    <li class="cursor-pointer">
+                        <a href="/index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cursor-pointer"><a href="/public/pages/marketplace.html">
+                        Marketplace
+                    </a></li>
+                    <li class="cursor-pointer"><a href="/public/pages/auction.html">
+                        Auctions
+                    </a></li>
+                    <li class="cursor-pointer"><a href="/public/pages/dropweb.html">
+                        Drop
+                    </a></li>
+                </ul>
+            </nav>
+
+            <!-- DESKTOP ICONS -->
+            <section class="flex items-center gap-3">
+                <a href="#">
+                    <img src="/images/Search-desktop.png" alt="search" class="object-contain cursor-pointer">
+                </a>
+
+                <a href="/public/pages/checkout.html">
+                    <img src="/images/empty-cart.png" alt="cart" class="object-contain cursor-pointer">
+                </a>
+
+                <div>
+                    <img src="/images/notification.png" alt="notification" class="object-contain cursor-pointer">
+                </div>
+
+            </section>
+
+        </header>
+        <!-- DESKTOP HEADER ENDS -->
+
+        <!-- MOBILE MENU STARTS -->
+        <div class="w-full h-full absolute top-0 z-10 md:hidden sm:hidden flex justify-center mobile-nav-links bg-white">
+
+            <div class="w-[90%] h-[90%] flex flex-col items-start mt-6">
+
+                <div class="w-full flex items-center justify-between">
+                    <h2 class="font-bold font-STIX text-normal my-auto">
+                        ARTSY.
+                    </h2>
+                    <div class="close w-[20px]">
+                        <img src="/images/close-mobile.png" alt="close-mobile">
+                    </div>
+                </div>
+
+                <div class="mt-16">
+                    <ul class="flex flex-col items-start gap-4 w-full h-full font-Satoshi text-semi-normal">
+                        <li class="cursor-pointer">
+                            <a href="/index.html">
+                                Home
+                            </a></li>
+                        <li class="cursor-pointer">
+                            <a href="/public/pages/marketplace.html">
+                                Marketplace
+                            </a></li>
+                        <li class="cursor-pointer">
+                            <a href="/public/pages/auction.html">
+                                Auctions
+                            </a></li>
+                        <li class="cursor-pointer">
+                            <a href="/public/pages/dropweb.html">
+                                Drops
+                            </a></li>
+                    </ul>
+                </div>
+
+                <div class="w-full h-full flex items-end justify-end">
+                    <div class="h-[64px] w-[64px] bg-blue rounded-full flex items-center justify-center">
+                        <img src="/images/chat-logo.png" alt="chat-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MOBILE MENU ENDS -->
+
+    </main>
+
+
+    <div class="absolute z-10 top-0 left-0">
+        <img src="/images/first-round.png" alt="" style="object-fit: contain;" class="w-2/4">
+    </div>
+    <div class="absolute z-10 top-0 left-0">
+        <img src="/images/second-round.png" alt="" style="object-fit: contain;" class="w-2/4">
+    </div>
+
+    <section class="w-screen flex flex-col items-center justify-center h-[80vh]">
+        <img src="/images/Woman get online delivery-desktop.png" alt="">
+        <h2 class="text-normal font-bold">Hey Celestina, thank you for your purchase.</h2>
+        <p class="text-small">You are amazing. Cheers to being <span class="text-teal">ARTSY!</span></p>
+    </section>
+    
+
+    <script src="/public/scripts/mobile.js"></script>
+    <script src="/public/scripts/script.js"></script>
+</body>
+</html>
