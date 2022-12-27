@@ -145,17 +145,24 @@
     </main>
 
 
-    <div class="absolute z-10 top-0 left-0">
-        <img src="/images/first-round.png" alt="" style="object-fit: contain;" class="w-2/4">
+    <div class="absolute md:flex sm:hidden z-10 top-0 left-0">
+        <img src="/images/first-round.png" alt="" style="object-fit: contain;" class="w-3/4">
     </div>
-    <div class="absolute z-10 top-0 left-0">
-        <img src="/images/second-round.png" alt="" style="object-fit: contain;" class="w-2/4">
+    <div class="absolute md:flex sm:hidden z-10 top-0 left-0">
+        <img src="/images/second-round.png" alt="" style="object-fit: contain;" class="w-3/4">
     </div>
 
-    <section class="w-screen flex flex-col items-center justify-center h-[80vh]">
+    <section class="w-screen md:flex sm:hidden flex-col items-center justify-center h-[80vh]">
         <img src="/images/Woman get online delivery-desktop.png" alt="">
-        <h2 class="text-normal font-bold">Hey Celestina, thank you for your purchase.</h2>
+        <h2 class="text-normal font-bold my-5">Hey Celestina, thank you for your purchase.</h2>
         <p class="text-small">You are amazing. Cheers to being <span class="text-teal">ARTSY!</span></p>
+    </section>
+
+    <section class="md:hidden relative sm:flex flex-col items-center justify-center h-[90vh] w-full" style="background: url(/images/orange-center-mobile.png), url(/images/blue-left-top.png); background-position: right center, top left; background-repeat: no-repeat;">
+        <img src="/images/purple-top-center.png" alt="purple-top-center" class="absolute top-0">
+        <img src="/images/Woman get online delivery-mobile.png" alt="Woman" class="z-10">
+        <h3 class="text-small font-medium my-3">Hey Celestina, thank you for your purchase. </h3>
+        <p class="text-smallest">You are amazing. Cheers to being <span class="text-teal">ARTSY!</span></p>
     </section>
     
 
