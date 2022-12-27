@@ -29,7 +29,8 @@ module.exports = {
     },
     screens: {
       sm: '200px',
-      md: '768px',
+      tb: '768px',
+      md: '1024px',
     },
     extend: {
       fontFamily: {
