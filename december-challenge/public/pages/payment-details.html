@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/styles.css">
+    <!-- FONTSHARE API -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&f[]=clash-display@200,400,700,500,600,300&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE FONT API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Bellefair&family=Poppins&family=Rubik:wght@500&family=STIX+Two+Text:wght@700&display=swap" rel="stylesheet">
+
+    <title>ARTSY | Marketplace</title>
+</head>
+<body class="font-Satoshi overflow-x-hidden">
+
+    <main class="w-screen flex flex-col items-center justify-center">
+        <!-- MOBILE HEADER STARTS -->
+        <header class="md:hidden flex w-[95%] justify-between my-5">
+
+            <!-- MOBILE MENU BUTTON -->
+            <section class="flex items-center w-[10%] menu">
+                <img src="/images/menu.png" alt="menu button">
+            </section>
+
+            <!-- MOBILE LOGO -->
+            <section class="flex items-baseline justify-center w-[75%]">
+                <h2 class="font-bold font-STIX text-normal">
+                    <a href="/index.html">
+                        ARTSY.
+                    </a>
+                </h2>
+            </section>
+
+            <!-- MOBILE ICONS -->
+            <section class="flex w-[15%]">
+                <a href="#" class="my-auto">
+                    <img src="/images/search.png" alt="search" class="object-contain">
+                </a>
+
+                <a href="/public/pages/checkout.html" class="my-auto">
+                    <img src="/images/empty-mobile-cart.png" alt="cart" class="object-contain">
+                </a>
+            </section>
+
+        </header>
+        <!-- MOBILE HEADER ENDS -->
+
+        <!-- DESKTOP HEADER STARTS -->
+        <header class="sm:hidden md:flex w-[80%] justify-between my-10">
+            <!-- LOGO -->
+            <section>
+                <h1 class="font-bold font-STIX text-semiBig cursor-pointer">
+                    <a href="/index.html">
+                        ARTSY.
+                    </a>
+                </h1>
+            </section>
+
+            <!-- DESKTOP NAV BAR -->
+            <nav class="font-Satoshi items-center flex justify-center w-[485px]">
+                <ul class="flex gap-[47px] text-black font-normal text-normal">
+                    <li class="cursor-pointer">
+                        <a href="/index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cursor-pointer underline"><a href="/public/pages/marketplace.html">
+                        Marketplace
+                    </a></li>
+                    <li class="cursor-pointer"><a href="/public/pages/auction.html">
+                        Auctions
+                    </a></li>
+                    <li class="cursor-pointer"><a href="/public/pages/dropweb.html">
+                        Drop
+                    </a></li>
+                </ul>
+            </nav>
+
+            <!-- DESKTOP ICONS -->
+            <section class="flex items-center gap-3">
+                <a href="#">
+                    <img src="/images/Search-desktop.png" alt="search" class="object-contain cursor-pointer">
+                </a>
+
+                <a href="/public/pages/checkout.html">
+                    <img src="/images/empty-cart.png" alt="cart" class="object-contain cursor-pointer">
+                </a>
+
+                <div>
+                    <img src="/images/notification.png" alt="notification" class="object-contain cursor-pointer">
+                </div>
+
+            </section>
+
+        </header>
+        <!-- DESKTOP HEADER ENDS -->
+
+        <!-- MOBILE MENU STARTS -->
+        <div class="w-full h-full absolute top-0 z-10 md:hidden sm:hidden flex justify-center mobile-nav-links bg-white">
+
+            <div class="w-[90%] h-[90%] flex flex-col items-start mt-6">
+
+                <div class="w-full flex items-center justify-between">
+                    <h2 class="font-bold font-STIX text-normal my-auto">
+                        ARTSY.
+                    </h2>
+                    <div class="close w-[20px]">
+                        <img src="/images/close-mobile.png" alt="close-mobile">
+                    </div>
+                </div>
+
+                <div class="mt-16">
+                    <ul class="flex flex-col items-start gap-4 w-full h-full font-Satoshi text-semi-normal">
+                        <li class="cursor-pointer">
+                            <a href="/index.html">
+                                Home
+                            </a></li>
+                        <li class="cursor-pointer underline">
+                            <a href="/public/pages/marketplace.html">
+                                Marketplace
+                            </a></li>
+                        <li class="cursor-pointer">
+                            <a href="/public/pages/auction.html">
+                                Auctions
+                            </a></li>
+                        <li class="cursor-pointer">
+                            <a href="/public/pages/dropweb.html">
+                                Drops
+                            </a></li>
+                    </ul>
+                </div>
+
+                <div class="w-full h-full flex items-end justify-end">
+                    <div class="h-[64px] w-[64px] bg-blue rounded-full flex items-center justify-center">
+                        <img src="/images/chat-logo.png" alt="chat-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MOBILE MENU ENDS -->
+
+    </main>
+
+    <!-- cart navigation section starts -->
+    <section class="w-screen md:grid place-items-center sm:hidden">
+        <div class="w-[40%] flex justify-between items-center border-b border-lighter-grey my-10 text-semi-normal">
+            <a href="/public/pages/checkout.html">
+                Shopping cart
+            </a>
+            <a href="/public/pages/cart-details.html">
+                Shopping details
+            </a>
+            <a href="/public/pages/payment-details.html" class="font-bold border-b">
+                Payment details
+            </a>
+        </div>
+    </section>
+
+    <section class="w-full h-[30px] flex flex-col items-start justify-between mt-3 ml-2 md:hidden">
+        <div class="flex">
+            <p class="text-light-grey font-Poppins font-thin text-smallest"><a href="/index.html">Home</a>/<a href="/public/pages/marketplace.html">Marketplace</a>/</p><span class="text-black text-smallest my-auto">Cart</span>
+        </div>
+    </section>
+    <!-- cart navigation section ends -->
+
+    <div class="w-full grid place-items-center">
+        <div class="w-[80%] flex items-center justify-between">
+            <p class="text-normal">Payment method</p>
+            <div class="flex gap-3 items-center justify-center">
+                <img src="/images/secure.png" alt="secure">
+                <p class="text-semi-normal text-grey">Secure server</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="w-full flex items-center justify-center mt-10">
+        <div class="w-[80%] flex">
+            
+            <div class="w-1/2 flex border border-light-grey rounded-[8px] flex-col items-start p-6">
+
+                <div class="h-[50px] flex items-center justify-between w-full mt-4">
+                    <div class="flex items-center justify-center gap-3">
+                        <input type="radio" name="radio" id="radio" checked>
+                    <label for="radio" class="text-semi-normal">Select your wallet</label>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <img src="/images/MetaMask - jpeg.png" alt="MetaMask">
+                        <img src="/images/Coinbase - png.png" alt="Coinbase">
+                        <img src="/images/WalletConnect - jpeg.png" alt="WalletConnect">
+                        <img src="/images/Phantom - jpeg.png" alt="Phantom">
+                    </div>
+                </div>
+
+                <div class="w-full flex items-center justify-center my-6">
+                    <h3 class="text-left w-4/6 text-grey text-small">
+                        Connect with one of our available wallet providers or add and connect a new wallet. 
+                    </h3>
+                </div>
+
+                <div class="w-full flex flex-col text-grey gap-2 mt-6">
+                    <label for="wallet">Wallet type</label>
+                    <input type="text" class="h-[3.5rem] bg-lighter-grey pl-6 my-1 rounded-[10px] outline-none active:bg-light-grey appearance-none border-light-grey border" style="-webkit-appearance:none;
+                    -moz-appearance:none;
+                    appearance:none;">
+                </div>
+
+                <div class="w-full flex flex-col text-grey gap-2 mt-6">
+                    <label for="wallet">Key</label>
+                    <input type="text" placeholder="Please enter your key" class="h-[3.5rem] bg-lighter-grey pl-6 my-1 rounded-[10px] outline-none active:bg-light-grey appearance-none border-light-grey border" style="-webkit-appearance:none;
+                    -moz-appearance:none;
+                    appearance:none;">
+                </div>
+
+                <div class="flex w-full items-center justify-between my-6">
+
+                    <div class="w-[49%] flex flex-col text-grey gap-2">
+                        <label for="wallet">Expiry date</label>
+                        <input type="number" placeholder="MM/YY" class="h-[3.5rem] bg-lighter-grey pl-6 my-1 rounded-[10px] outline-none active:bg-light-grey appearance-none border-light-grey border" style="-webkit-appearance:none;
+                        -moz-appearance:none;
+                        appearance: none;">
+                    </div>
+                    
+                    <div class="w-[49%] flex flex-col text-grey gap-2">
+                        <label for="postal code">CVV</label>
+                        <input type="number" name="postal" id="postal" placeholder="***" class="h-[60px] bg-lighter-grey pl-6 my-1 rounded-[10px] outline-none active:bg-light-grey appearance-none border-light-grey border" style="-webkit-appearance:none;
+                        -moz-appearance:none;
+                        appearance:none;">
+                    </div>
+
+                </div>
+
+                <section class="flex w-full mt-8">
+                    <label class="container w-full">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <p class="md:text-small sm:text-smallest font-Satoshi font-light text-light-grey">Save my wallet details & information for future transactions</p>
+                    </label>
+                </section>
+            </div>
+
+            <div class="w-1/2 flex flex-col items-start p-6">
+                <h2 class="text-normal">Payment Summary</h2>
+                <hr class="h-[1px] w-full border-none bg-light-grey my-6">
+                <p class="text-semi-normal text-grey my-2">Metamask wallet : 002345KJi90pzzz3</p>
+                <p class="text-small text-grey">Actively linked to Yaba, Lagos Nigeria.</p>
+                <hr class="h-[1px] w-full border-none bg-light-grey my-8">
+                <p class="text-small text-grey">Expected arrival date: Between 22nd September and 26th September 20222</p>
+                <hr class="h-[1px] w-full border-none bg-light-grey my-8">
+
+                <div class="w-full flex items-center justify-between my-2">
+                    <p class="text-grey">Products in cart:</p>
+                    <p>3 items</p>
+                </div>
+
+                <div class="w-full flex items-center justify-between my-2">
+                    <p class="text-grey">Shipping:</p>
+                    <p>$2.50</p>
+                </div>
+
+                <div class="w-full flex items-center justify-between my-2">
+                    <p class="text-grey">Total:</p>
+                    <p>$114.00</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="w-full flex items-center justify-center my-10">
+        <div class="w-[80%]">
+            <button class="w-1/2 bg-blue h-[70px] text-white text-semi-normal">Confirm</button>
+        </div>
+    </section>
+
+</body>
+</html>
