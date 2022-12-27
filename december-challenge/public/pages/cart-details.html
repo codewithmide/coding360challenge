@@ -160,7 +160,7 @@
         </div>
     </section>
 
-    <section class="w-full h-[30px] flex flex-col items-start justify-between my-6 ml-2 md:hidden">
+    <section class="h-[30px] flex flex-col items-start justify-between my-6 ml-2 md:hidden">
         <div class="flex">
             <p class="text-light-grey font-Poppins font-thin text-smallest"><a href="/index.html">Home</a>/<a href="/public/pages/marketplace.html">Marketplace</a>/<a href="/public/pages/checkout.html">Cart/</a> </p><span class="text-black text-smallest my-auto">Shipping</span>
         </div>
@@ -168,9 +168,9 @@
     <!-- cart navigation section ends -->
 
     <!-- shipping details starts -->
-    <section class="w-screen grid place-items-center md:my-10 sm:mb-10 md:mb-0">
+    <section class="w-screen flex justify-center items-center md:my-10 sm:mb-10">
 
-        <div class="md:w-[85%] sm:w-[95%] flex md:justify-between">
+        <div class="w-[85%] sm:hidden md:flex justify-between">
 
             <div class="md:w-[48%] sm:w-full flex flex-col md:gap-6 sm:gap-4">
 
@@ -256,11 +256,11 @@
                         </button>
                     </a>
 
-                    <a href="/public/pages/checkout.html" class="text-teal font-bold text-smallest underline">Go back to cart</a>
+                    <a href="/public/pages/checkout.html" class="text-teal font-bold text-smallest underline md:hidden">Go back to cart</a>
                 </div>
             </div>
 
-            <div class="md:w-[48%] sm:hidden flex flex-col gap-4">
+            <div class="md:w-[48%] flex flex-col gap-4">
                 <div class="md:flex sm:hidden flex-col items-center justify-center my-8">
                     <hr class="border border-lighter-grey w-full">
             
@@ -368,6 +368,96 @@
                 </div>
             </div>
 
+        </div>
+
+        <div class="md:hidden w-[95%] flex items-center justify-center">
+            <div class="w-full flex flex-col gap-4">
+
+                <div class="w-full flex flex-col text-grey gap-2">
+                    <label for="email">Your email</label>
+                    <input type="text" name="email" id="email" placeholder="aanuoluwateenah@gmail.com" class="h-[3rem] bg-lighter-grey pl-5 rounded-[10px] outline-none active:bg-light-grey border-light-grey border">
+
+                    <section class="flex w-full">
+                        <label class="container w-full">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p class="md:text-small sm:text-smallest font-Satoshi font-light">Get updates about new drops & exclusive offers</p>
+                        </label>
+                    </section>
+                </div>
+
+                <div class="w-full flex flex-col text-grey gap-2">
+                    <label for="name">Your fullname</label>
+                    <input type="text" name="name" id="name" placeholder="Anuoluwapo Bamisaye" class="h-[3.5rem] bg-lighter-grey md:pl-10 sm:pl-6 my-1 rounded-[10px] outline-none active:bg-light-grey border-light-grey border">
+                </div>
+                
+                <div class="w-full flex flex-col text-grey gap-2">
+                    <label for="wallet">Choose a wallet</label>
+                    <select class="h-[3.5rem] bg-lighter-grey md:pl-10 sm:pl-6 my-1 rounded-[10px] outline-none active:bg-light-grey appearance-none border-light-grey border" style="-webkit-appearance:none;
+                    -moz-appearance:none;
+                    appearance:none;">
+                        <option value="EMPTY"></option>
+                        <option value="METAMASK">Metamask</option>
+                        <option value="COINBASE">Coinbase</option>
+                    </select>
+                </div>
+
+                <div class="w-full flex flex-col text-grey gap-2">
+                    <label for="wallet">City</label>
+                    <select class="h-[3.5rem] bg-lighter-grey pl-10 my-1 rounded-[10px] outline-none active:bg-light-grey appearance-none border-light-grey border" style="-webkit-appearance:none;
+                    -moz-appearance:none;
+                    appearance:none;">
+                        <option value="EMPTY"></option>
+                        <option value="LAG">Lagos</option>
+                        <option value="ABJ">Abuja</option>
+                        <option value="CAL">Calabar</option>
+                        <option value="PHC">Port Harcourt</option>
+                        <option value="UYO">Uyo</option>
+                    </select>
+                </div>
+
+                <div class="flex w-full items-center justify-between">
+
+                    <div class="w-[49%] flex flex-col text-grey gap-2">
+                        <label for="wallet">Country</label>
+                        <select class="h-[3.5rem] bg-lighter-grey md:pl-6 sm:pl-3 my-1 rounded-[10px] outline-none active:bg-light-grey appearance-none border-light-grey border" style="-webkit-appearance:none;
+                        -moz-appearance:none;
+                        appearance:none;">
+                            <option value="EMPTY"></option>
+                            <option value="LAG">Nigeria</option>
+                            <option value="ABJ">Germany</option>
+                            <option value="CAL">United Kingdom</option>
+                            <option value="PHC">United states of America</option>
+                            <option value="UYO">Canada</option>
+                        </select>
+                    </div>
+                    
+                    <div class="w-[49%] flex flex-col text-grey gap-2">
+                        <label for="postal code">Postal code</label>
+                        <input type="number" name="postal" id="postal" placeholder="001001" class="h-[60px] bg-lighter-grey md:pl-6 sm:pl-3 my-1 rounded-[10px] outline-none active:bg-light-grey appearance-none border-light-grey border" style="-webkit-appearance:none;
+                        -moz-appearance:none;
+                        appearance:none;">
+                    </div>
+
+                </div>
+
+                <div class="w-full flex flex-col text-grey gap-2">
+                    <label for="wallet">Phone number</label>
+                    <input type="tel" name="telephone" id="phone" placeholder="+2347088899861" class="h-[60px] bg-lighter-grey md:pl-10 sm:pl-6 my-1 rounded-[10px] outline-none active:bg-light-grey appearance-none border-light-grey border" style="-webkit-appearance:none;
+                    -moz-appearance:none;
+                    appearance:none;">
+                </div>
+
+                <div class="w-full my-3 flex flex-col items-center justify-center gap-3">
+                    <a href="/public/pages/payment-details.html" class="w-full h-full grid place-items-center">
+                        <button class="md:w-full h-[4rem] sm:w-4/6 h-full bg-blue text-white">
+                            Proceed to payment
+                        </button>
+                    </a>
+
+                    <a href="/public/pages/checkout.html" class="text-teal font-bold text-smallest underline">Go back to cart</a>
+                </div>
+            </div>
         </div>
 
     </section>
