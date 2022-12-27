@@ -159,14 +159,15 @@
         </div>
     </section>
 
-    <section class="w-full h-[30px] flex flex-col items-start justify-between mt-3 ml-2 md:hidden">
+    <section class="h-[30px] flex flex-col items-start justify-between my-6 ml-2 md:hidden">
         <div class="flex">
-            <p class="text-light-grey font-Poppins font-thin text-smallest"><a href="/index.html">Home</a>/<a href="/public/pages/marketplace.html">Marketplace</a>/</p><span class="text-black text-smallest my-auto">Cart</span>
+            <p class="text-light-grey font-Poppins font-thin text-smallest"><a href="/index.html">Home</a>/<a href="/public/pages/marketplace.html">Marketplace</a>/<a href="/public/pages/checkout.html">Cart/</a><a href="/public/pages/cart-details.html">Shipping/</a> </p><span class="text-black text-smallest my-auto">Payment</span>
         </div>
     </section>
     <!-- cart navigation section ends -->
 
-    <div class="w-full grid place-items-center">
+    <!-- DESKTOP CONTENTS STARTS -->
+    <section class="w-full md:grid sm:hidden place-items-center">
         <div class="w-[80%] flex items-center justify-between">
             <p class="text-normal">Payment method</p>
             <div class="flex gap-3 items-center justify-center">
@@ -174,9 +175,9 @@
                 <p class="text-semi-normal text-grey">Secure server</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <section class="w-full flex items-center justify-center mt-10">
+    <section class="w-full md:flex sm:hidden items-center justify-center mt-10">
         <div class="w-[80%] flex">
             
             <div class="w-1/2 flex border border-light-grey rounded-[8px] flex-col items-start p-6">
@@ -269,10 +270,71 @@
         </div>
 
     </section>
+    <!-- DESKTOP CONTENTS ENDS -->
+
+    <!-- MOBILE CONTENTS STARTS -->
+    <section class="w-full md:hidden sm:flex items-center justify-center mt-6">
+        <div class="w-[95%] flex flex-col items-start">
+            <div class="flex gap-2 items-center justify-center">
+                <img src="/images/secure-mobile.png" alt="secure">
+                <p class="text-grey">Secure server</p>
+            </div>
+            <div class="my-4">
+                <input type="radio" name="radio" id="radio" checked>
+                <label for="radio" class="text-semi-normal">Select your wallet</label>
+            </div>
+            <p class="text-grey text-smallest my-3">Connect with one of our available wallet providers or add and connect a new wallet.</p>
+            <div class="flex items-center justify-center gap-1">
+                <img src="/images/MetaMask - jpeg-mobile.png" alt="MetaMask">
+                <img src="/images/Coinbase - png-mobile.png" alt="Coinbase">
+                <img src="/images/WalletConnect - jpeg-mobile.png" alt="WalletConnect">
+                <img src="/images/Phantom - jpeg-mobile.png" alt="Phantom">
+                <div class="h-[42px] w-[42px] rounded-full grid place-items-center border border-grey">
+                    <img src="/images/plus.png" alt="plus">
+                </div>
+            </div>
+            <div class="w-full flex flex-col text-grey gap-2 mt-10">
+                <label for="wallet">Wallet type</label>
+                <input type="text" class="h-[3rem] bg-lighter-grey pl-4 text-smallest my-1 rounded-[10px] outline-none active:bg-light-grey appearance-none border-light-grey border" style="-webkit-appearance:none;
+                -moz-appearance:none;
+                appearance:none;">
+            </div>
+
+            <div class="w-full flex flex-col text-grey gap-2 mt-6">
+                <label for="wallet">Key</label>
+                <input type="text" placeholder="Please enter your key" class="h-[3rem] bg-lighter-grey pl-4 my-1 rounded-[10px] text-smallest outline-none active:bg-light-grey appearance-none border-light-grey border" style="-webkit-appearance:none;
+                -moz-appearance:none;
+                appearance:none;">
+            </div>
+
+            <div class="w-full flex flex-col text-grey gap-2 mt-6">
+                <label for="wallet">Expiry date</label>
+                <input type="number" placeholder="MM/YY" class="h-[3rem] bg-lighter-grey pl-4 my-1 rounded-[10px] outline-none active:bg-light-grey text-smallest appearance-none border-light-grey border" style="-webkit-appearance:none;
+                -moz-appearance:none;
+                appearance: none;">
+            </div>
+
+            <div class="w-full flex flex-col text-grey gap-2 mt-6">
+                <label for="postal code">Safe code</label>
+                <input type="number" name="postal" id="postal" placeholder="***" class="h-[3rem] bg-lighter-grey pl-4 my-1 rounded-[10px] outline-none active:bg-light-grey appearance-none text-smallest border-light-grey border" style="-webkit-appearance:none;
+                -moz-appearance:none;
+                appearance:none;">
+            </div>
+
+            <section class="flex w-full mt-8">
+                <label class="container w-full">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <p class="md:text-small sm:text-smallest font-Satoshi font-light text-light-grey">Save my wallet details & information for future transactions</p>
+                </label>
+            </section>
+        </div>
+    </section>
+    <!-- MOBILE CONTENTS ENDS -->
 
     <section class="w-full flex items-center justify-center my-10">
         <div class="w-[80%]">
-            <button class="w-1/2 bg-blue h-[70px] text-white text-semi-normal">Confirm</button>
+            <button class="md:w-[50%] sm:w-full bg-blue md:h-[70px] sm:h-[50px] text-white md:text-semi-normal sm:text-small">Confirm</button>
         </div>
     </section>
 
