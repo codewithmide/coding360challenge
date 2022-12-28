@@ -1641,6 +1641,19 @@ video {
   width: 87%;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[485\] {
+  width: 485;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -2535,10 +2548,6 @@ video {
 
   .sm\:gap-4 {
     gap: 1rem;
-  }
-
-  .sm\:overflow-x-hidden {
-    overflow-x: hidden;
   }
 
   .sm\:pl-6 {
