@@ -529,9 +529,9 @@ video {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .container {
-    max-width: 1440px;
+    max-width: 1024px;
   }
 }
 
@@ -797,10 +797,6 @@ video {
   margin-top: 2rem;
 }
 
-.ml-3 {
-  margin-left: 0.75rem;
-}
-
 .mb-\[3\.3rem\] {
   margin-bottom: 3.3rem;
 }
@@ -815,6 +811,10 @@ video {
 
 .mb-3 {
   margin-bottom: 0.75rem;
+}
+
+.mr-\[15rem\] {
+  margin-right: 15rem;
 }
 
 .mr-6 {
@@ -913,6 +913,22 @@ video {
   margin-bottom: 12rem;
 }
 
+.ml-\[\] {
+  margin-left: ;
+}
+
+.ml-\[-2rem\] {
+  margin-left: -2rem;
+}
+
+.ml-\[-5rem\] {
+  margin-left: -5rem;
+}
+
+.ml-\[5rem\] {
+  margin-left: 5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -927,6 +943,10 @@ video {
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-\[250px\] {
@@ -951,6 +971,10 @@ video {
 
 .h-\[305px\] {
   height: 305px;
+}
+
+.h-\[70px\] {
+  height: 70px;
 }
 
 .h-\[78px\] {
@@ -981,8 +1005,8 @@ video {
   height: 0.8px;
 }
 
-.h-\[546px\] {
-  height: 546px;
+.h-\[73\%\] {
+  height: 73%;
 }
 
 .h-\[194\.95px\] {
@@ -1217,10 +1241,6 @@ video {
   height: 39px;
 }
 
-.h-\[70px\] {
-  height: 70px;
-}
-
 .h-\[65px\] {
   height: 65px;
 }
@@ -1333,10 +1353,6 @@ video {
   width: 15%;
 }
 
-.w-\[80\%\] {
-  width: 80%;
-}
-
 .w-\[485px\] {
   width: 485px;
 }
@@ -1369,8 +1385,16 @@ video {
   width: 64px;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
 .w-\[610px\] {
   width: 610px;
+}
+
+.w-\[70px\] {
+  width: 70px;
 }
 
 .w-\[540px\] {
@@ -1397,24 +1421,12 @@ video {
   width: 159px;
 }
 
-.w-\[1200px\] {
-  width: 1200px;
-}
-
 .w-\[667px\] {
   width: 667px;
 }
 
-.w-\[705px\] {
-  width: 705px;
-}
-
 .w-\[16px\] {
   width: 16px;
-}
-
-.w-\[628\.85px\] {
-  width: 628.85px;
 }
 
 .w-\[353\.88px\] {
@@ -1465,8 +1477,8 @@ video {
   width: 98%;
 }
 
-.w-\[60\%\] {
-  width: 60%;
+.w-\[170px\] {
+  width: 170px;
 }
 
 .w-\[59px\] {
@@ -1605,10 +1617,6 @@ video {
   width: 108px;
 }
 
-.w-\[70px\] {
-  width: 70px;
-}
-
 .w-\[32px\] {
   width: 32px;
 }
@@ -1637,6 +1645,10 @@ video {
   width: 75%;
 }
 
+.w-\[60\%\] {
+  width: 60%;
+}
+
 .w-\[50px\] {
   width: 50px;
 }
@@ -1647,6 +1659,33 @@ video {
 
 .w-\[87\%\] {
   width: 87%;
+}
+
+.w-\[3\%\] {
+  width: 3%;
+}
+
+.w-\[2\%\] {
+  width: 2%;
+}
+
+.w-\[6\%\] {
+  width: 6%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .cursor-pointer {
@@ -1711,8 +1750,8 @@ video {
   justify-content: space-evenly;
 }
 
-.gap-\[47px\] {
-  gap: 47px;
+.gap-\[35px\] {
+  gap: 35px;
 }
 
 .gap-3 {
@@ -1737,6 +1776,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-\[47px\] {
+  gap: 47px;
 }
 
 .gap-8 {
@@ -1863,14 +1906,14 @@ video {
   border-style: none;
 }
 
-.border-dark-grey {
-  --tw-border-opacity: 1;
-  border-color: rgb(51 51 51 / var(--tw-border-opacity));
-}
-
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-dark-grey {
+  --tw-border-opacity: 1;
+  border-color: rgb(51 51 51 / var(--tw-border-opacity));
 }
 
 .border-black {
@@ -2158,6 +2201,10 @@ video {
 
 .leading-\[125\.36px\] {
   line-height: 125.36px;
+}
+
+.leading-\[49\.2px\] {
+  line-height: 49.2px;
 }
 
 .leading-\[32px\] {
@@ -2597,7 +2644,7 @@ video {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .md\:my-10 {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
@@ -2680,6 +2727,10 @@ video {
     height: 70px;
   }
 
+  .md\:w-\[80\%\] {
+    width: 80%;
+  }
+
   .md\:w-\[70\%\] {
     width: 70%;
   }
@@ -2688,8 +2739,16 @@ video {
     width: 926px;
   }
 
-  .md\:w-\[1200px\] {
-    width: 1200px;
+  .md\:w-\[83\%\] {
+    width: 83%;
+  }
+
+  .md\:w-\[705px\] {
+    width: 705px;
+  }
+
+  .md\:w-\[628\.85px\] {
+    width: 628.85px;
   }
 
   .md\:w-\[50\%\] {
@@ -2710,10 +2769,6 @@ video {
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-\[80\%\] {
-    width: 80%;
   }
 
   .md\:w-\[40\%\] {

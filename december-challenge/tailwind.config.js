@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html",
-  "./public/pages/**/*.html",],
+  "./public/pages/**/*.html",
+  "./public/scripts/**/*.js"],
   theme: {
     colors: {
       'grey': '#616161',
@@ -30,7 +31,7 @@ module.exports = {
     screens: {
       sm: '200px',
       tb: '768px',
-      md: '1440px',
+      md: '1024px',
     },
     extend: {
       fontFamily: {

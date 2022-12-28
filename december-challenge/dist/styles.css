@@ -4,6 +4,139 @@
     background-repeat: no-repeat;
 }
 
+.egyptian {
+  background: url(/images/lady-sleep-1.png) no-repeat; background-size: cover;
+  background-position: center center;
+}
+
+.egyptian:hover {
+  background: url(/images/dark-desktop-egyptian-boolean.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: block;
+}
+
+.egyptian:hover .egyptian-content {
+  display: flex !important;
+}
+
+.egyptian-content {
+  display: none;
+}
+
+.egyptian-second {
+  background: url(/images/egyptian-desktop.png) no-repeat; background-size: cover;
+  background-position: center center;
+}
+
+.egyptian-second:hover {
+  background: url(/images/second-egyptian.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: block;
+}
+
+.egyptian-second:hover .egyptian-content-second {
+  display: flex !important;
+}
+
+.egyptian-content-second {
+  display: none;
+}
+
+
+.egyptian-third {
+  background: url(/images/mummy-desktop.png) no-repeat; background-size: cover;
+  background-position: center center;
+}
+
+.egyptian-third:hover {
+  background: url(/images/mummy-dark.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: block;
+}
+
+.egyptian-third:hover .egyptian-content-third {
+  display: flex !important;
+}
+
+.egyptian-content-third {
+  display: none;
+}
+
+
+
+
+.container{
+  overflow: hidden;
+}
+
+.wrapper{
+  width: 100%;
+  display: flex;
+  animation: slide 3s infinite;
+}
+
+.wrappertwo{
+  width: 100%;
+  display: flex;
+  animation: slide 4s infinite;
+}
+
+@keyframes slide{
+  0%{
+      transform: translateX(0);
+  }
+  20%{
+    transform: translateX(-100%);
+  }
+  40%{
+    transform: translateX(-200%);
+  }
+  60% {
+    transform: translateX(-300%)
+  }
+  80%{
+    transform: translateX(-400%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+}
+
+@keyframes slidetwo{
+  0%{
+      transform: translateX(0);
+  }
+  25%{
+    transform: translateX(-125%);
+  }
+  50%{
+    transform: translateX(-250%);
+  }
+  75% {
+    transform: translateX(-425%)
+  }
+  100%{
+      transform: translateX(-575%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* The container */
 .container {
     display: block;
