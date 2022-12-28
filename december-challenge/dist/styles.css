@@ -70,23 +70,39 @@
 
 .container{
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapper{
   width: 100%;
   display: flex;
-  animation: slide 3s infinite;
+  align-items: center;
+  animation: slide 8s infinite;
 }
 
 .wrappertwo{
   width: 100%;
   display: flex;
-  animation: slide 4s infinite;
+  animation: slidetwo 8s infinite;
 }
+
+.wrapperthree{
+  width: 100%;
+  display: flex;
+  animation: slidethree 6s infinite;
+}
+
+.wrapperfour{
+  display: flex;
+  animation: slidefour 5s infinite;
+}
+
 
 @keyframes slide{
   0%{
-      transform: translateX(0);
+      transform: translateX(0%);
   }
   20%{
     transform: translateX(-100%);
@@ -107,19 +123,64 @@
 
 @keyframes slidetwo{
   0%{
-      transform: translateX(0);
+    transform: translateX(0%);
   }
-  25%{
-    transform: translateX(-125%);
+  20%{
+    transform: translateX(-100%);
   }
-  50%{
+  40%{
+    transform: translateX(-200%);
+  }
+  60% {
+    transform: translateX(-300%)
+  }
+  80%{
+    transform: translateX(-400%);
+  }
+  100% {
+    transform: translateX(-450%);
+  }
+}
+
+@keyframes slidethree{
+  0%{
+    transform: translateX(0%);
+  }
+  20%{
+    transform: translateX(-50%);
+  }
+  40%{
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(-200%)
+  }
+  80%{
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(10%);
+  }
+}
+
+@keyframes slidefour{
+  0%{
+    transform: translateX(0%);
+  }
+  20%{
+    transform: translateX(-50%);
+  }
+  40%{
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(-200%)
+  }
+  80%{
     transform: translateX(-250%);
   }
-  75% {
-    transform: translateX(-425%)
-  }
-  100%{
-      transform: translateX(-575%);
+  100% {
+    transform: translateX(0%);
   }
 }
 
