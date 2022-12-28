@@ -79,13 +79,13 @@
   width: 100%;
   display: flex;
   align-items: center;
-  animation: slide 8s infinite;
+  animation: slide 6s infinite;
 }
 
 .wrappertwo{
   width: 100%;
   display: flex;
-  animation: slidetwo 8s infinite;
+  animation: slidetwo 5s infinite;
 }
 
 .wrapperthree{
@@ -117,7 +117,7 @@
     transform: translateX(-400%);
   }
   100% {
-    transform: translateX(-400%);
+    transform: translateX(-200%);
   }
 }
 
@@ -126,19 +126,19 @@
     transform: translateX(0%);
   }
   20%{
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
   40%{
-    transform: translateX(-200%);
+    transform: translateX(-100%);
   }
   60% {
-    transform: translateX(-300%)
+    transform: translateX(-200%)
   }
   80%{
     transform: translateX(-400%);
   }
   100% {
-    transform: translateX(-450%);
+    transform: translateX(0%);
   }
 }
 
@@ -156,10 +156,10 @@
     transform: translateX(-200%)
   }
   80%{
-    transform: translateX(-300%);
+    transform: translateX(-350%);
   }
   100% {
-    transform: translateX(10%);
+    transform: translateX(-400%);
   }
 }
 
