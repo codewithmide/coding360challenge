@@ -16,3 +16,4 @@ egyptianContainer.addEventListener('mouseover', () => {
 egyptianContainer.addEventListener("mouseout", () => {
     egyptianContent.style.display = 'none';
 });
+

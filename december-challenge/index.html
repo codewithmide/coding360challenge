@@ -107,7 +107,7 @@
 
         <div class="md:h-[505px] tb:h-[350px] sm:hidden md:flex justify-center items-center w-screen oveflow-hidden gap-4">
 
-            <div class="md:h-[332px] w-[24.5%] container border-black">
+            <div class="md:h-[332px] w-[24.5%] contain border-black">
                 <div class="wrapperfour w-full h-full flex gap-4">
                     <img src="/images/glass-desktop-woman.png" alt="glass" style="object-fit: contain;">
                     <img src="/images/first-slide-flower.png" alt="flower-desktop">
@@ -117,7 +117,7 @@
                 </div>
             </div>
 
-            <div class="md:h-[428px] w-[24.5%] container">
+            <div class="md:h-[428px] w-[24.5%] contain">
                 <div class="wrapperthree flex gap-4">
                     <img src="/images/first-slide-fruit.png" alt="fruit">
                     <img src="/images/first-slide-kangaroo.png" alt="kangaroo-desktop">
@@ -127,7 +127,7 @@
                 </div>
             </div>
 
-            <div class="md:h-[428px] w-[24.5%] container mt-[-4rem]">
+            <div class="md:h-[428px] w-[24.5%] contain mt-[-4rem]">
                 <div class="wrappertwo flex gap-4">
                     <img src="/images/first-slide-girl.png" alt="little-girl-desktop">
                     <img src="/images/first-slide-flower.png" alt="flower-desktop">
@@ -137,7 +137,7 @@
                 </div>
             </div>
             
-            <div class="md:h-[428px] w-[24.5%] container">
+            <div class="md:h-[428px] w-[24.5%] contain">
                 <div class="wrapper flex gap-4">
                     <img src="/images/first-slide-flower.png" alt="flower-desktop">
                     <img src="/images/first-slide-girl.png" alt="little-girl-desktop">
@@ -668,6 +668,7 @@
 
         <!-- CREATORS CONTENT FOR DESKTOP -->
         <div class="sm:hidden md:flex w-[1226px] h-[915.75px] absolute bottom-[-3rem] left-[5rem] flex flex-col">
+
             <div class="w-full h-[295.69px] flex justify-between">
                 <div class="w-[70%] h-1/2">
                     <h1 class="w-[535px] h-[172px] font-Clash font-bold text-biggie uppercase">
@@ -705,10 +706,15 @@
                 </h1>
             </div>
 
-            <div class="absolute w-[826px] h-[837.75px] right-[3.5rem] bottom-0">
-                <img src="./images/creator-lady.png" alt="creator-lady" class="object-contain">
+            <div class="relative w-[826px] h-[837.75px] right-[3.5rem] bottom-0" id="image-container">
+                <img src="/images/creator-lady.png" alt="creator-lady" class="object-contain" class="current">
+                <img src="/images/strong-face.png" alt="strong-face" class="object-contain">
+                <img src="/images/idgaf-face.png" alt="idgaf-face" class="object-contain">
             </div>
+
         </div>
+
+    </div>
         <!-- CREATORS CONTENT FOR DESKTOP ENDS -->
 
 
@@ -752,6 +758,7 @@
         <!-- CREATORS CONTENT FOR MOBILE ENDS -->
     </div>
     <!-- CREATORS SECTION ENDS -->
+
 
     <footer class="w-screen flex flex-col items-center justify-between mb-6">
         <div class="flex md:border border-black w-[90%] h-[320px] sm:items-start md:items-center justify-center flex-col gap-5">

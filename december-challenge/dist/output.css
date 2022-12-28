@@ -667,6 +667,26 @@ video {
   bottom: 8.5rem;
 }
 
+.left-\[3\.5rem\] {
+  left: 3.5rem;
+}
+
+.left-\[\.5rem\] {
+  left: .5rem;
+}
+
+.right-\[rem\] {
+  right: rem;
+}
+
+.right-\[5rem\] {
+  right: 5rem;
+}
+
+.right-\[4rem\] {
+  right: 4rem;
+}
+
 .z-10 {
   z-index: 10;
 }
