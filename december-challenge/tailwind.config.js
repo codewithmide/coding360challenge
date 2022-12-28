@@ -30,7 +30,7 @@ module.exports = {
     screens: {
       sm: '200px',
       tb: '768px',
-      md: '1024px',
+      md: '1440px',
     },
     extend: {
       fontFamily: {
