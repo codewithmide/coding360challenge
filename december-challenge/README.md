@@ -8,6 +8,7 @@
 |Duration:  | Dec 1st 2022 - Dec 31st 2022                      |
 |Sponsor:   | [BasitDevelops](https://twitter.com/BasitDevelops)|
 |Designer:  | [celestinaa0](https://twitter.com/celestinaa0)    |
+|Live view: | [artsybymide.netlify.app](https://artsybymide.netlify.app/)|
 |Community: | [Tech360](https://twitter.com/i/communities/1534272865725472770)|
 
 ## Prototype
