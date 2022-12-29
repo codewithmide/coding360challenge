@@ -11,7 +11,7 @@
 
 ## Prototype
 
-![Desktop prototype](./images/prototype.png)
+![Desktop prototype](./images/desktop-prototype.png)
 
 ## Technologies
 
