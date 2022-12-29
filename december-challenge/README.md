@@ -8,6 +8,7 @@
 |Duration:  | Dec 1st 2022 - Dec 31st 2022                      |
 |Sponsor:   | [BasitDevelops](https://twitter.com/BasitDevelops)|
 |Designer:  | [celestinaa0](https://twitter.com/celestinaa0)    |
+|Community: | [Tech360](https://twitter.com/i/communities/1534272865725472770)|
 
 ## Prototype
 
@@ -24,5 +25,16 @@
 
 ## Requirement
 
-- [figma link](https://www.figma.com/file/18hZ5n19imr8RxmzwXUtKK/ARTSY?node-id=302%3A119&t=mkbfAHKhY0dCptfM-1)
-  
+- responsiveness is a must
+- clean codes
+- use semantics
+- comment on your codes
+- proper documentation
+- attention to detail
+- use animations (where u can)
+
+## General
+
+- [Live view](https://artsybymide.netlify.app/)
+- [Figma link](https://www.figma.com/file/18hZ5n19imr8RxmzwXUtKK/ARTSY?node-id=302%3A119&t=mkbfAHKhY0dCptfM-1)
+- [Challenge announcement](https://twitter.com/codingossy/status/1598218445069639681)
