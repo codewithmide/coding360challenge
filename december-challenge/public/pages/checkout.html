@@ -191,9 +191,9 @@
                     <p class="text-light-grey">Clearamane</p>
                     <p class="text-light-grey">Size: <span class="text-dark">200 ft</span></p>
                     <div class="h-[20%] flex gap-4 text-normal">
-                        <p class="cursor-pointer">-</p>
-                        <h1>1</h1>
-                        <p class="cursor-pointer">+</p>
+                        <div class="cursor-pointer" id="decrement-count">-</div>
+                        <div id="total-count">1</div>
+                        <div class="cursor-pointer" id="increment-count">+</div>
                     </div>
                 </div>
             </div>
@@ -381,6 +381,6 @@
     <!-- checkout ends -->
 
     <script src="/public/scripts/mobile.js"></script>
-    <script src="/public/scripts/script.js"></script>
+    <script defer src="/public/scripts/script.js"></script>
 </body>
 </html>

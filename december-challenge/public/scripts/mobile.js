@@ -1,3 +1,5 @@
+// Hamburger menu for mobile devices
+
 let navLinks = document.querySelector('.mobile-nav-links');
 let menu = document.querySelector('.menu');
 let close = document.querySelector('.close');
