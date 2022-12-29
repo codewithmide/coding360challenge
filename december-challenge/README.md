@@ -1,8 +1,9 @@
 # ARTSY
 `Frontend Development` `Web Development` `Viking` `Baby dev` `challenge`
 
+|Challenge: | coding360challenge                                |
+|:----------|:--------------------------------------------------|
 |Hosted by: | [codingossy](https://twitter.com/codingossy)      |
-|-----------|---------------------------------------------------|
 |Group:     | Baby dev/Viking                                   |
 |Duration:  | Dec 1st 2022 - Dec 31st 2022                      |
 |Sponsor:   | [BasitDevelops](https://twitter.com/BasitDevelops)|
