@@ -917,10 +917,6 @@ video {
   margin-bottom: 12rem;
 }
 
-.box-border {
-  box-sizing: border-box;
-}
-
 .inline-block {
   display: inline-block;
 }
