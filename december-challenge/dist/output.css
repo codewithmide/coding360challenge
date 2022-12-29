@@ -1637,6 +1637,18 @@ video {
   width: 87%;
 }
 
+.w-\[\%\] {
+  width: %;
+}
+
+.w-\[28\%\] {
+  width: 28%;
+}
+
+.w-\[29\%\] {
+  width: 29%;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
