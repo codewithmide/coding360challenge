@@ -38,3 +38,4 @@
 - [Live view](https://artsybymide.netlify.app/)
 - [Figma link](https://www.figma.com/file/18hZ5n19imr8RxmzwXUtKK/ARTSY?node-id=302%3A119&t=mkbfAHKhY0dCptfM-1)
 - [Challenge announcement](https://twitter.com/codingossy/status/1598218445069639681)
+- [Follow me on twitter](https://github.com/codewithmide)
