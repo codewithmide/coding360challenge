@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="/dist/styles.css">
     <!-- FONTSHARE API -->
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&f[]=clash-display@200,400,700,500,600,300&display=swap" rel="stylesheet">
 
     <!-- GOOGLE FONT API -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Bellefair&family=Poppins&family=Rubik:wght@500&family=STIX+Two+Text:wght@700&display=swap" rel="stylesheet">
+
+    <!-- SWIPER JS CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/styles.css">
 
     <title>ARTSY | Road to Egypt</title>
 </head>
@@ -222,23 +231,35 @@
                 <h1 class="text-semi-normal text-left leading-[37.82px]">
                     More from this collection
                 </h1>
+
                 <div class="border w-full flex flex-col items-center h-[490px]">
 
                     <div class="w-[95%] h-[5%] flex items-end justify-end my-2">
                         <img src="/images//favorite.png" alt="favorite" class="h-[90%]">
                     </div>
 
-                    <div class="h-[85%] w-[95%] grid place-items-center" style="background: url(/images/two-ladies.png); background-position: center center; background-repeat: no-repeat; background-size: cover;">
-                        <div class="h-[50px] w-full flex items-center justify-between">
-                            <div class="w-[50px] h-full border-grey rounded-full border grid place-items-center">
-                                <img src="/images/dark-back-arrow.png" alt="dark-back-arrow" class="w-[20%]">
-                            </div>
+                    <!-- Slider main container -->
+                    <div class="swiper w-[95%] h-[85%]">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide w-full" style="background: url(/images/two-ladies.png); background-position: center center; background-repeat: no-repeat; background-size: cover;"></div>
 
-                            <div class="w-[50px] h-full border-white rounded-full border grid place-items-center">
-                                <img src="/images/light-forward-arrow.png" alt="dark-back-arrow" class="w-[20%]">
-                            </div>
+                        <div class="swiper-slide w-full" style="background: url(/images/bougie.png); background-position: center center; background-repeat: no-repeat; background-size: cover;"></div>
+
+                        <div class="swiper-slide w-full" style="background: url(/images/lost.png); background-position: center center; background-repeat: no-repeat; background-size: cover;"></div>
+
+                        <div class="swiper-slide w-full" style="background: url(/images/circa.png); background-position: center center; background-repeat: no-repeat; background-size: cover;"></div>
+                        </div> 
+
+                        <div class="swiper-button-prev h-[60px] w-[60px] border border-grey rounded-full">
+                            <img src="/images/dark-back-arrow.png" alt="left-marketplace-arrow">
+                        </div>
+                        <div class="swiper-button-next h-[60px] w-[60px] border border-white rounded-full">
+                            <img src="/images/light-forward-arrow.png" alt="arrow-marketplace-arrow">
                         </div>
                     </div>
+                    
 
                     <div class="w-[95%] h-[5%] flex items-center justify-between my-auto">
                         <h3 class="leading-[23.42px]">Sassy</h3>
@@ -257,5 +278,20 @@
     <script src="/public/scripts/mobile.js"></script>
     <script src="/public/scripts/script.js"></script>
 
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+});
+    </script>
 </body>
 </html>
