@@ -20,7 +20,7 @@
 - HTML5
 - TailwindCSS
 - JavaScript(Eslint validated)
-  Swiper Js
+- Swiper Js
 - NPM
 - Google Fonts
 - Fontshare
