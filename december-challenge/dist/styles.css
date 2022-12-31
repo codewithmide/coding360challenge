@@ -258,6 +258,12 @@
     display: none;
   }
 
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-repeat: no-repeat;
+    color: #ccc;
+    background-position: center;
+  }
 
   #image-container {
     position: absolute;

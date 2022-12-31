@@ -667,6 +667,10 @@ video {
   bottom: 8.5rem;
 }
 
+.top-\[50\%\] {
+  top: 50%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1313,6 +1317,14 @@ video {
   height: 80px;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[95\%\] {
+  height: 95%;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -1641,6 +1653,10 @@ video {
   width: 87%;
 }
 
+.w-\[\] {
+  width: ;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1829,6 +1845,10 @@ video {
 
 .rounded-\[14px\] {
   border-radius: 14px;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .border {
