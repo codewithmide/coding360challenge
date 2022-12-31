@@ -667,10 +667,6 @@ video {
   bottom: 8.5rem;
 }
 
-.right-\[10\.5rem\] {
-  right: 10.5rem;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -1643,26 +1639,6 @@ video {
 
 .w-\[87\%\] {
   width: 87%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[65\%\] {
-  width: 65%;
-}
-
-.w-\[60\^\] {
-  width: 60^;
-}
-
-.w-\[px\] {
-  width: px;
-}
-
-.w-\[30\%px\] {
-  width: 30%px;
 }
 
 .cursor-pointer {
