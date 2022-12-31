@@ -265,6 +265,12 @@
     background-position: center;
   }
 
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+  
+
   #image-container {
     position: absolute;
     overflow: hidden;
